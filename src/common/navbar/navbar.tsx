@@ -1,13 +1,12 @@
-import * as S from './navbar.styles'
 import { LogoSvg, MenuSvg } from './svgs'
 
 export default function Navbar() {
   return (
-    <S.Header>
-      <S.Nav>
+    <header className="flex items-center h-[90px] px-[24px] py-[25px] bg-[#a6aeb8]">
+      <nav className="flex justify-between items-center w-full">
         <LogoSvg />
         <MenuSvg />
-      </S.Nav>
-    </S.Header>
+      </nav>
+    </header>
   )
 }

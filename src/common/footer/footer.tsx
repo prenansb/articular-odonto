@@ -1,4 +1,3 @@
-import * as S from './footer.styles'
 import { LogoSvg, WhatsappSvg, InstagramSvg, GhostSvg } from './svgs'
 
 const routes = [
@@ -15,53 +14,76 @@ const socials = [
 
 export default function Footer() {
   return (
-    <S.Footer>
-      <S.Line />
+    <footer className="mt-[64px] px-[24px]">
+      <div className="border border-[#9ca8b7] " />
 
-      <S.Logo>
+      <div className="flex justify-between items-center mt-[24px] mb-[56px]">
         <LogoSvg />
-      </S.Logo>
+      </div>
 
-      <S.Address>
-        <h4>Endereço da clínica</h4>
-        <span>Avenida Humberto Monte - 1440, Fortaleza, Ceará.</span>
-      </S.Address>
+      <div>
+        <h4 className="font-semibold text-[20px] leading-[27px] text-[#515c6b]">
+          Endereço da clínica
+        </h4>
+        <span className="font-medium text-[16px] leading-[24px] text-[#7c8999]">
+          Avenida Humberto Monte - 1440, Fortaleza, Ceará.
+        </span>
+      </div>
 
-      <S.Contact>
-        <h4>Telefone para contato</h4>
-        <span>(85) 9.9999-9999 ou (85) 9.9999-9999 </span>
-      </S.Contact>
+      <div className="mt-[32px] mb-[56px]">
+        <h4 className="font-semibold text-[20px] leading-[27px] text-[#515c6b]">
+          Telefone para contato
+        </h4>
+        <span className="font-medium text-[16px] leading-[24px] text-[#7c8999]">
+          (85) 9.9999-9999 ou (85) 9.9999-9999{' '}
+        </span>
+      </div>
 
-      <S.Line />
+      <div className="border border-[#9ca8b7] " />
 
-      <S.SiteMap>
-        <span>Mapa do site:</span>
-        <S.Links>
+      <div className="mt-[24px]">
+        <span className="font-semibold text-[18px] leading-[27px] text-[#586474] ">
+          Mapa do site:
+        </span>
+        <ul className="flex flex-col gap-[16px] mt-[16px]">
           {routes.map(route => (
-            <S.Link key={route.name}>{route.name}</S.Link>
+            <li
+              className="font-medium text-[16px] leading-[24px] text-[#7c8999]"
+              key={route.name}
+            >
+              {route.name}
+            </li>
           ))}
-        </S.Links>
-      </S.SiteMap>
-      <S.Social>
-        <span>Conecte-se conosco:</span>
-        <S.SocialList>
+        </ul>
+      </div>
+
+      <div className="mt-[24px] mb-[32px]">
+        <span className="mb-[16px] font-semibold text-[18px] leading-[27px] text-[#586474]">
+          Conecte-se conosco:
+        </span>
+        <ul className="flex items-center gap-[16px] mt-[24px]">
           {socials.map(social => (
-            <S.SocialIcon key={social.name}>{social.icon}</S.SocialIcon>
+            <li
+              className="flex justify-center items-center p-[8px] bg-[#515c6b] rounded-[4px]"
+              key={social.name}
+            >
+              {social.icon}
+            </li>
           ))}
-        </S.SocialList>
-      </S.Social>
+        </ul>
+      </div>
 
-      <S.Line />
+      <div className="border border-[#9ca8b7] " />
 
-      <S.Copyrights>
-        <S.Rights>
+      <div className="flex-col mt-[24px]">
+        <div className="font-semibold text-[18px] leading-[27px] text-[#475567] text-center">
           Articular Odonto.
           <br /> Todos os direitos reservados
-        </S.Rights>
-        <S.Developed>
+        </div>
+        <div className="flex flex-col items-center justify-center gap-[8px] mt-[32px] mb-[40px] text-[#586474] text-[18px] leading-[27px] font-semibold">
           Desenvolvido por: <GhostSvg />
-        </S.Developed>
-      </S.Copyrights>
-    </S.Footer>
+        </div>
+      </div>
+    </footer>
   )
 }
