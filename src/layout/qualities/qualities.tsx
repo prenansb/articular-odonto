@@ -48,7 +48,7 @@ export default function Qualities() {
               <h5 className="text-[#F7F7F7] text-[16px] leading-[24px] font-semibold">
                 {topic.attribute}
               </h5>
-              <p className="text-[#F6F6F8] text-[14px] leading-[21px] font-normal text-center">
+              <p className="text-[#F6F6F8] text-[14px] leading-[21px] font-normal text-center max-w-[327px]">
                 {topic.description}
               </p>
             </li>
