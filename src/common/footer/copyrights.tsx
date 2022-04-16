@@ -1,4 +1,4 @@
-import { GhostSvg } from '../svgs'
+import { GhostSvg } from './svgs'
 
 export default function Copyrights() {
   return (

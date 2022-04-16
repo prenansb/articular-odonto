@@ -1,4 +1,4 @@
-import { WhatsappSvg, InstagramSvg } from '../svgs'
+import { InstagramSvg, WhatsappSvg } from './svgs'
 
 const routes = [
   { name: 'Nossos tratamentos', path: '' },

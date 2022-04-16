@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { Footer, Navbar } from '../common'
-import { Hero, Qualities, LastCall, Location } from '../layout'
+import { Hero, LastCall, Location, Qualities } from '../layout'
 
 const Home: NextPage = () => {
   return (

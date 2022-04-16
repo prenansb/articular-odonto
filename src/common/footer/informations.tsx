@@ -1,4 +1,4 @@
-import { LogoSvg } from '../svgs'
+import { LogoSvg } from './svgs'
 
 export default function Informations() {
   return (
