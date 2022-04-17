@@ -1,4 +1,4 @@
-import { WhatsappSvg, DiamondSvg } from './svgs'
+import { DiamondSvg, WhatsappSvg } from './svgs'
 
 const qualities = [
   'Ambiente confortável',
@@ -6,7 +6,7 @@ const qualities = [
   'Consultório bem localizado',
 ]
 
-export default function Hero() {
+export default function Home() {
   return (
     <section className="flex flex-col items-center">
       <div className="flex flex-col items-center gap-[8px] mb-[32px] mt-[40px]">

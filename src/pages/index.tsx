@@ -1,23 +1,19 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { Footer, Navbar } from '../common'
-import { Hero, LastCall, Location, Qualities } from '../layout'
+import { Home, LastCall, Location, Qualities } from '../layout'
 
-const Home: NextPage = () => {
+const Index: NextPage = () => {
   return (
     <>
       <Head>
         <title>Articular Odonto</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
-      <Hero />
+      <Home />
       <Qualities />
       <Location />
       <LastCall />
-      <Footer />
     </>
   )
 }
 
-export default Home
+export default Index
