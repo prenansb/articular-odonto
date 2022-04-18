@@ -2,11 +2,36 @@
   "cSpell.words": [
     "conosco",
     "contato",
+    "Dentística",
+    "imgs",
+    "Implantodontia",
     "Informations",
     "Odonto",
     "preconnect",
     "semibold",
     "svgs",
-    "tailwindcss"
+    "tailwindcss",
+    "unoptimized"
+  ],
+  "cSpell.ignoreWords": [
+    "Aliquam",
+    "Facilisis",
+    "Vivamus",
+    "adipiscing",
+    "amet",
+    "congue",
+    "consectetur",
+    "cras",
+    "eget",
+    "elit",
+    "enim",
+    "morbi",
+    "natoque",
+    "orci",
+    "proin",
+    "tincidunt",
+    "tortor",
+    "turpis",
+    "varius"
   ]
 }
