@@ -8,7 +8,7 @@ export default function Gallery() {
           <CameraSvg />
           GALERIA
         </span>
-        <h2 className="mb-[16px] text-[#233B37] text-[22px] leading-[30px] font-semibold text-center">
+        <h2 className="mb-[16px] text-[#233B37] text-[22px] leading-[30px] font-bold text-center">
           Nossos resultados
         </h2>
         <p className="mb-[40px] text-[#667F7B] text-[16px] leading-[24px] font-medium text-center max-w-[220px]">

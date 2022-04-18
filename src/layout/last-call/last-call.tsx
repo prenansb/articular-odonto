@@ -4,12 +4,12 @@ import { WhatsappSvg } from './svgs'
 
 export default function LastCall() {
   return (
-    <div className="flex flex-col items-center h-[531px] relative mt-[16px]">
+    <div className="flex flex-col items-center h-[531px] relative">
       <div className="absolute">
         <Image src={BannerImg} alt="" unoptimized />
       </div>
       <div className="flex flex-col items-center z-10">
-        <h2 className="max-w-[222px] text-[22px] text-[#F7F7F7] font-bold leading-[30px] text-center mt-[48px] mb-[16px]">
+        <h2 className="max-w-[242px] text-[24px] text-[#F7F7F7] font-bold leading-[36px] text-center mt-[48px] mb-[16px]">
           Estamos juntos para fazer você sorrir!
         </h2>
         <p className="max-w-[267px] text-[16px] text-[#F6F6F8] font-medium leading-[24px] text-center mb-[32px]">

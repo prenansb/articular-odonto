@@ -11,8 +11,8 @@ const qualities = [
 export default function Home() {
   return (
     <section className="flex flex-col items-center">
-      <div className="flex flex-col items-center gap-[8px] mb-[32px] mt-[40px]">
-        <span className="flex items-center gap-[8px] text-[14px] text-[#81540E] font-medium leading-[18px] text-center">
+      <div className="flex flex-col items-center gap-[12px] mb-[32px] mt-[40px]">
+        <span className="flex items-center gap-[8px] text-[14px] text-[#81540E] font-semibold leading-[18px] text-center">
           <HeartSvg />
           ESTAMOS AQUI POR VOCÊ
         </span>
@@ -25,18 +25,18 @@ export default function Home() {
         </p>
       </div>
 
-      <button className="flex items-center justify-center gap-[20px] bg-[#54B6AE] rounded-[4px] py-[14px] px-[32px] mb-[40px]">
+      <button className="flex items-center justify-center gap-[10px] bg-[#54B6AE] rounded-[4px] py-[16px] px-[40px] mb-[40px]">
         <WhatsappSvg />
-        <a href="#" className="text-[14px] text-[#FFFFFF] font-medium leading-[21px]">
+        <a href="#" className="text-[14px] text-[#FFFFFF] font-medium leading-[24px]">
           Agende sua consulta
         </a>
       </button>
 
-      <ul className="flex flex-col justify-center items-start gap-[16px] mb-[60px]">
+      <ul className="flex flex-col justify-center items-start gap-[24px] mb-[56px]">
         {qualities.map(quality => (
           <li
             key={quality.title}
-            className="flex items-center gap-[11.5px] text-[#81540E] text-[14px] font-medium leading-[18px]"
+            className="flex items-center gap-[16px] text-[#81540E] text-[14px] font-medium leading-[18px]"
           >
             {quality.icon}
             {quality.title}
@@ -44,7 +44,7 @@ export default function Home() {
         ))}
       </ul>
 
-      <div className="mb-[96px]">
+      <div className="mb-[96px] h-[426px]">
         <Image src={PersonImg} alt="person smiling" priority unoptimized />
       </div>
     </section>

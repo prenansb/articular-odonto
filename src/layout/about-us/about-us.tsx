@@ -25,7 +25,7 @@ export default function AboutUs() {
         <div>
           <Image src={Costumer} alt="" unoptimized />
         </div>
-        <div>
+        <div className="h-[187px]">
           <Image src={Dentistry} alt="" unoptimized />
         </div>
         <div>

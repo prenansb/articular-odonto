@@ -5,7 +5,7 @@ export default function Informations() {
     <>
       <div className="w-full h-[1px] bg-[#233B37]" />
 
-      <div className="flex flex-col items-start gap-[32px] mt-[24px] mb-[56px]">
+      <div className="flex flex-col items-start gap-[32px] mt-[32px] mb-[48px]">
         <LogoSvg />
         <span className="max-w-[147px] font-medium text-[18px] leading-[27px] text-[#667F7B]">
           Uma vida melhor, começa com um belo sorriso!
@@ -13,7 +13,7 @@ export default function Informations() {
       </div>
 
       <div>
-        <h4 className="font-semibold text-[20px] leading-[27px] text-[#36414C]">
+        <h4 className="mb-[8px] font-medium text-[20px] leading-[27px] text-[#36414C]">
           Endereço da clínica
         </h4>
         <span className="font-medium text-[16px] leading-[24px] text-[#667F7B]">
@@ -22,7 +22,7 @@ export default function Informations() {
       </div>
 
       <div className="mt-[32px] mb-[56px]">
-        <h4 className="font-semibold text-[20px] leading-[27px] text-[#36414C]">
+        <h4 className="mb-[8px] font-medium text-[20px] leading-[27px] text-[#36414C]">
           Telefone para contato
         </h4>
         <span className="font-medium text-[16px] leading-[24px] text-[#667F7B]">

@@ -3,7 +3,7 @@ import { ClockSvg, MarkerSvg, PhoneSvg, SecondaryMarkerSvg } from './svgs'
 const details = [
   {
     title: 'Horários de atendimento',
-    description: `Segunda a Sexta: 08h30 às 19h00 
+    description: `Segunda a Sexta: 08h30 às 19h00
       Sábado: 08h30 às 12h00`,
     icon: <ClockSvg />,
   },
@@ -22,29 +22,29 @@ const details = [
 
 export default function Location() {
   return (
-    <section className="flex flex-col items-center gap-[32px] py-[64px]">
+    <section className="flex flex-col items-center gap-[40px] py-[80px]">
       <div className="flex flex-col items-center">
-        <span className="flex items-center gap-[8px] mb-[16px] text-[14px] text-[#81540E] leading-[18px] font-medium">
+        <span className="flex items-center gap-[8px] mb-[8px] text-[14px] text-[#81540E] leading-[18px] font-semibold">
           <MarkerSvg />
           ENDEREÇO
         </span>
-        <h2 className="mb-[15px] text-[22px] text-[#233B37] leading-[30px] font-bold">
+        <h2 className="mb-[16px] text-[22px] text-[#233B37] leading-[30px] font-bold">
           Nossa localização
         </h2>
-        <span className="max-w-[250px] text-[20px] text-[#667F7B] leading-[30px] font-medium text-center">
+        <span className="max-w-[250px] text-[16px] text-[#667F7B] leading-[24px] font-medium text-center">
           Estamos pertinho de você, vem conhecer a gente!
         </span>
       </div>
 
       <div className="bg-[#A6AEB8] w-[327px] h-[327px] rounded-[8px]"></div>
-      <ul className="flex flex-col items-center gap-[32px]">
+      <ul className="mt-[8px] flex flex-col items-center gap-[48px]">
         {details.map(detail => (
           <li key={detail.title} className="flex flex-col items-center gap-[8px]">
             {detail.icon}
             <h5 className="text-[20px] text-[#36414C] leading-[27px] font-semibold text-center">
               {detail.title}
             </h5>
-            <p className="text-[16px] text-[#667F7B] leading-[24px] font-medium text-center">
+            <p className="max-w-[300px] text-[16px] text-[#667F7B] leading-[24px] font-medium text-center">
               {detail.description}
             </p>
           </li>
