@@ -1,6 +1,15 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { Home, LastCall, Location, Qualities } from '../layout'
+import {
+  AboutUs,
+  Gallery,
+  Home,
+  LastCall,
+  Localization,
+  Qualities,
+  Testimonials,
+  Treatments,
+} from '../layout'
 
 const Index: NextPage = () => {
   return (
@@ -10,7 +19,11 @@ const Index: NextPage = () => {
       </Head>
       <Home />
       <Qualities />
-      <Location />
+      <Treatments />
+      <AboutUs />
+      <Testimonials />
+      <Gallery />
+      <Localization />
       <LastCall />
     </>
   )
