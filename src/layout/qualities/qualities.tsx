@@ -20,9 +20,9 @@ const topics = [
     border: true,
   },
   {
-    attribute: 'Tratamentos avançados',
+    attribute: 'Consultório Moderno',
     description:
-      'Tratamentos modernos e avançados garantem a melhora da saúde bucal e da autoestima.',
+      'Nosso consultório é equipado com as melhores instalações técnicas e totalmente estruturado para o seu melhor conforto.',
     icon: <ChairSvg />,
     backgroundColor: 'bg-[#80B4FC]',
     border: false,
