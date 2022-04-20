@@ -35,12 +35,26 @@ export default function Location() {
           Estamos pertinho de você, vem conhecer a gente!
         </span>
 
-        <div className="hidden bg-[#A6AEB8] w-[684px] h-[357px] rounded-[8px] mb-[16px] md:mb-[24px] xl:block"></div>
+        {/* <div className="hidden bg-[#A6AEB8] w-[684px] h-[357px] rounded-[8px] mb-[16px] md:mb-[24px] xl:block"></div> */}
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1990.6433180952681!2d-38.56256874209371!3d-3.7476228228429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c749670c7a509b%3A0xcc8ca1a07e181e60!2sAv.%20Humberto%20Monte%2C%201440%20-%20Amadeu%20Furtado%2C%20Fortaleza%20-%20CE%2C%2060455-682!5e0!3m2!1sen!2sbr!4v1650446120161!5m2!1sen!2sbr"
+          width="592"
+          height="357"
+          style={{
+            border: '1px solid rgba(0, 0, 0, 0.1)',
+            boxShadow: '0px 0px 12px rgba(0, 0, 0, 0.08)',
+            borderRadius: 8,
+          }}
+          allowFullScreen={undefined}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
       </div>
 
       <div className="bg-[#A6AEB8] w-[327px] h-[327px] rounded-[8px] mb-[16px] md:mb-[24px] xl:hidden"></div>
 
-      <ul className="flex flex-col items-center gap-[48px] md:flex-row md:max-w-[672px] md:flex-wrap md:justify-center xl:flex-col xl:items-start xl:gap-[62p]x xl:max-w-[320px]">
+      <ul className="flex flex-col items-center gap-[48px] md:flex-row md:flex-wrap md:gap-x-[156px] md:justify-center xl:flex-col xl:items-start xl:gap-[62p]x xl:max-w-[320px]">
         <span className="hidden max-w-[250px] text-[16px] text-[#667F7B] leading-[24px] font-medium text-center md:text-[20px] md:leading-[30px] xl:block xl:text-left">
           Estamos pertinho de você, vem conhecer a gente!
         </span>
