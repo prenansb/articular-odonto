@@ -1,12 +1,12 @@
-import { Copyrights, Informations, SiteMap } from '.'
+import { Copyrights, Informations } from '.'
 
 export default function Footer() {
   return (
-    <footer className="mt-[80px] px-[24px]">
+    <footer className="mt-[80px] px-[24px] xl:max-w-[1216px] xl:mx-auto">
+      <div className="w-full h-[1px] bg-[#233B37]" />
       <Informations />
 
-      <SiteMap />
-
+      <div className="w-full h-[1px] bg-[#233B37]" />
       <Copyrights />
     </footer>
   )
