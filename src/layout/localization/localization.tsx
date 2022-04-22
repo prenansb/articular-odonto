@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react'
 import { ClockSvg, MarkerSvg, PhoneSvg, SecondaryMarkerSvg } from './svgs'
 
 const details = [
@@ -22,21 +21,6 @@ const details = [
 ]
 
 export default function Location() {
-  const [deviceSize, setDeviceSize] = useState(0)
-
-  useEffect(() => {
-    setDeviceSize(screen.width)
-    window.addEventListener('resize', () => {
-      setDeviceSize(screen.width)
-    })
-
-    return () => {
-      window.removeEventListener('resize', () => {
-        setDeviceSize(screen.width)
-      })
-    }
-  }, [])
-
   return (
     <section className="flex flex-col items-center gap-[40px] md:gap-[64px] py-[80px] xl:flex-row xl:justify-between xl:items-end xl:max-w-[1216px] xl:mx-auto">
       <div className="flex flex-col items-center gap-[16px] xl:items-start">
@@ -52,15 +36,8 @@ export default function Location() {
         </span>
 
         <iframe
-          className="md:mt-[32px] xl:mt-0"
+          className="w-[328px] h-[357px] md:w-[592px] rounded-lg border border-[rgba(0, 0, 0, 0.1)] shadow-[0_0_12px_rgba(0, 0, 0, 0.)] md:mt-[32px] xl:mt-0"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1990.6433180952681!2d-38.56256874209371!3d-3.7476228228429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c749670c7a509b%3A0xcc8ca1a07e181e60!2sAv.%20Humberto%20Monte%2C%201440%20-%20Amadeu%20Furtado%2C%20Fortaleza%20-%20CE%2C%2060455-682!5e0!3m2!1spt-BR!2sbr!4v1650446120161!5m2!1spt-BR!2sbr"
-          width={deviceSize < 768 ? '328px' : '592px'}
-          height="357px"
-          style={{
-            border: '1px solid rgba(0, 0, 0, 0.1)',
-            boxShadow: '0px 0px 12px rgba(0, 0, 0, 0.)',
-            borderRadius: 8,
-          }}
           allowFullScreen={undefined}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
