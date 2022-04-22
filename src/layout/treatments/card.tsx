@@ -2,14 +2,14 @@ import { CheckSvg, WhatsappSvg } from './svgs'
 
 const treatments = ['Tratamento de canal', 'Extração', 'Restauração']
 
-interface CardProps {
+type CardProps = {
   className?: string
 }
 
 export default function Card({ className }: CardProps) {
   return (
     <div
-      className={`flex flex-col items-start p-[24px] rounded-[8px] bg-[#E7ECF2] ${className}`}
+      className={`flex flex-col items-start p-[24px] rounded-[8px] bg-[#E7ECF2] ${className} xl:p-[32px]`}
     >
       <h5 className="mb-[8px] text-[#233B37] text-[24px] leading-[36px] font-medium md:text-[32px] md:leading-[48px]">
         Clínico geral
@@ -18,7 +18,7 @@ export default function Card({ className }: CardProps) {
         Seus procedimentos objetivam prevenir, diagnosticar e tratar problemas
         relacionados a tratamento de canal, extração e restauração.
       </p>
-      <div className="w-full py-[8px] px-[16px] mb-[32px] bg-gradient-to-r from-[#E1AB56] to-[rgba(225, 171, 86, 0)] text-[#F6F6F8] text-[18px] leading-[21px] font-semibold md:max-w-[528px]">
+      <div className="w-full py-[8px] px-[16px] mb-[32px] bg-gradient-to-r from-[#E1AB56] to-[rgba(225, 171, 86, 0)] text-[#F6F6F8] text-[18px] leading-[21px] font-semibold md:w-[528px]">
         Tratamentos
       </div>
       <ul className="flex flex-col gap-[21px] mb-[56px]">

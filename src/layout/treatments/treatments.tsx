@@ -3,7 +3,7 @@ import { ClipboardSvg } from './svgs'
 
 export default function Treatments() {
   return (
-    <section className="flex flex-col items-center gap-[56px] py-[80px] xl:flex-row xl:justify-between xl:max-w-[1216px] xl:mx-auto">
+    <section className="flex flex-col items-center gap-[56px] py-[80px] xl:flex-row xl:justify-between xl:max-w-[1216px] xl:mx-auto xl:pt-[128px] xl:pb-[148px] xl:items-start">
       <div className="flex flex-col items-center gap-[56px] xl:gap-[64px]">
         <div className="flex flex-col items-center gap-[8px] xl:items-start">
           <span className="flex items-center gap-[8px] text-[14px] text-[#81540E] leading-[18px] font-semibold md:mb-[8px] ">
@@ -20,7 +20,7 @@ export default function Treatments() {
 
         <Accordion />
       </div>
-      <Card className="hidden xl:block" />
+      <Card className="hidden xl:block xl:mt-[40px]" />
     </section>
   )
 }
