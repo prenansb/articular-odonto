@@ -1,13 +1,13 @@
 import Image from 'next/image'
-import Appointment from './imgs/appointment.png'
-import Costumer from './imgs/costumer.png'
-import Dentistry from './imgs/dentistry.png'
+import Appointment from './imgs/appointment.jpg'
+import Costumer from './imgs/costumer.jpg'
+import Dentistry from './imgs/dentistry.jpg'
 import { ContactSvg } from './svgs'
 
 export default function AboutUs() {
   return (
-    <section className="flex flex-col items-center pt-[48px] relative ">
-      <div className="bg-gradient-to-b from-[#EEF2F6] to-[#E7ECF2] w-full h-[473px] absolute top-0" />
+    <section className="flex flex-col items-center pt-[48px] md:pt-[96px] relative ">
+      <div className="bg-gradient-to-b from-[#EEF2F6] to-[#E7ECF2] w-full h-[473px] md:h-[690px] xl:h-[739px] absolute top-0" />
       <div className="flex flex-col items-center mb-[48px] z-10 md:mb-[55px] xl:mb-[40px]">
         <span className="flex items-center gap-[8px] mb-[8px] text-[#81540E] text-[14px] leading-[18px] font-semibold xl:mb-[16px]">
           <ContactSvg /> SOBRE NÓS
@@ -22,14 +22,32 @@ export default function AboutUs() {
         </p>
       </div>
       <div className="flex items-center gap-[11px]">
-        <div>
-          <Image src={Costumer} alt="" unoptimized />
+        <div className="w-[90px] md:w-[186px] xl:w-[280px]">
+          <Image
+            src={Costumer}
+            className="rounded-[6px] md:rounded-[10px] xl:rounded-[16px]"
+            alt=""
+            unoptimized
+            layout="responsive"
+          />
         </div>
-        <div className="h-[187px]">
-          <Image src={Dentistry} alt="" unoptimized />
+        <div className="w-[124px] md:w-[256px] xl:w-[384px] ">
+          <Image
+            src={Dentistry}
+            className="rounded-[6px] md:rounded-[10px] xl:rounded-[16px]"
+            alt=""
+            unoptimized
+            layout="responsive"
+          />
         </div>
-        <div>
-          <Image src={Appointment} alt="" unoptimized />
+        <div className="w-[90px] md:w-[186px] xl:w-[280px]">
+          <Image
+            src={Appointment}
+            className="rounded-[6px] md:rounded-[10px] xl:rounded-[16px]"
+            alt=""
+            unoptimized
+            layout="responsive"
+          />
         </div>
       </div>
     </section>

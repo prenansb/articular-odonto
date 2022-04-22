@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import RoomImg from './imgs/room.jpg'
+import RoomImg from './imgs/room.png'
 import { ArrowDownSvg, ChairSvg, CheckSvg, CompilingSvg, LightningSvg } from './svgs'
 
 const topics = [
@@ -12,9 +12,8 @@ const topics = [
     border: true,
   },
   {
-    attribute: 'Consultório Moderno',
-    description: `Nosso consultório é equipado com as
-  melhores instalações técnicas e totalmente estruturado para o seu melhor conforto.`,
+    attribute: 'Tratamentos avançados',
+    description: `Tratamentos modernos e avançados garantem a melhora da saúde bucal e da autoestima.`,
     icon: <LightningSvg />,
     backgroundColor: 'bg-[#FFCF99]',
     border: true,
@@ -32,29 +31,35 @@ const topics = [
 export default function Qualities() {
   return (
     <section className="bg-gradient-to-b from-[#EEF2F6] to-[#E7ECF2]">
-      <div className="relative flex flex-col items-center xl:flex-row xl:justify-between xl:items-start xl:max-w-[1216px] xl:mx-auto xl:py-[80px]">
-        <div className="px-[12px] py-[14px] absolute top-[-16px] bg-[#E1AB56] rounded-[999px] xl:left-[650px]">
+      <div className="relative flex flex-col items-center xl:flex-row xl:justify-between xl:items-start xl:max-w-[1216px] xl:mx-auto xl:py-[96px]">
+        <div className="px-[12px] py-[14px] absolute top-[-16px] bg-[#E1AB56] rounded-[999px] xl:left-[calc(50%-18px)]">
           <ArrowDownSvg />
         </div>
 
         <div className="flex flex-col items-center xl:items-start">
-          <span className="flex items-center gap-[8px] text-[#81540E] text-[14px] leading-[18px] font-semibold mt-[96px] mb-[8px] md:mb-[16px] xl:mt-0">
+          <span className="flex items-center gap-[8px] text-[#81540E] text-[14px] leading-[18px] font-semibold mt-[96px] mb-[8px] md:mb-[20px] xl:mt-0">
             <CompilingSvg />
             DIFERENCIAIS
           </span>
-          <h2 className="text-[#233B37] text-[22px] leading-[30px] font-bold  mb-[16px] md:text-[32px] md:mb-[24px]">
+          <h2 className="text-[#233B37] text-[22px] leading-[30px] font-bold  mb-[16px] md:text-[32px] md:mb-[24px] xl:mb-[56px]">
             Qualidades Articular Odonto
           </h2>
           <span className="text-[#233B37] text-[16px] leading-[24px] font-normal mb-[40px] max-w-[250px] text-center md:text-[24px] md:max-w-[400px] md:leading-[36px] md:mb-[56px] xl:hidden">
             Descubra o que nos diferencia de outras clínicas em Fortaleza
           </span>
-          <div className="h-[259px] relative  before:bg-[#40C8BD] before:opacity-40 before:h-[237px] before:w-[296px] before:absolute before:rounded-[4px] before:top-[30px] before:right-[30px]">
-            <Image src={RoomImg} className="rounded-[4px]" alt="room" unoptimized />
+          <div className="w-[318px] md:w-[592px] relative  before:bg-[#40C8BD] before:opacity-40 before:h-[237px] md:before:h-[443px] before:w-[296px] md:before:w-[552px] before:absolute before:rounded-[4px] md:before:rounded-[8px] before:top-[30px] before:right-[30px] md:before:top-[56px] md:before:right-[56px]">
+            <Image
+              src={RoomImg}
+              className="rounded-[4px]"
+              alt="room"
+              unoptimized
+              layout="responsive"
+            />
           </div>
         </div>
 
         <div className="xl:flex xl:flex-col">
-          <span className="hidden text-[#233B37] text-[16px] leading-[24px] font-normal mb-[56px] max-w-[250px] xl:block xl:mb-0">
+          <span className="hidden text-[#233B37] text-[16px] leading-[24px] font-normal mb-[56px] max-w-[250px] xl:block xl:mb-0 xl:mt-[20px]">
             Descubra o que nos diferencia de outras clínicas em Fortaleza
           </span>
           <ul className="flex flex-col gap-[32px] mt-[48px] mb-[64px] md:mt-[76px] xl:mt-[56px] xl:mb-0">
@@ -78,7 +83,7 @@ export default function Qualities() {
                   {topic.description}
                 </p>
                 {topic.border && (
-                  <div className="w-full h-[1px] mt-[7px]  bg-[#233B37] opacity-50 md:mt-[23px]" />
+                  <div className="w-full h-[1px] mt-[7px] bg-gradient-to-r from-[#233B37] to-[rgba(35, 59, 55, 0)] opacity-50 md:mt-[23px] xl:w-[416px]" />
                 )}
               </li>
             ))}

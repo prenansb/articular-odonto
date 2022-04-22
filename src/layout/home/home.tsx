@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import PersonImg from './imgs/person.png'
+import HeroBanner from './imgs/hero-banner.png'
 import { ArmchairSvg, CompassSvg, HeartSvg, PeopleSvg, WhatsappSvg } from './svgs'
 
 const qualities = [
@@ -10,7 +10,7 @@ const qualities = [
 
 export default function Home() {
   return (
-    <section className="flex flex-col items-center xl:flex-row xl:justify-between xl:max-w-[1216px] xl:mx-auto">
+    <section className="flex flex-col items-center xl:flex-row xl:justify-between xl:max-w-[1216px] xl:mx-auto xl:mt-[26px]">
       <div className="flex flex-col items-center mb-[56px] mt-[40px] md:mb-[96px] xl:items-start xl:mt-[80px]">
         <span className="flex items-center gap-[8px] mb-[16px] text-[14px] text-[#81540E] font-semibold leading-[18px] text-center">
           <HeartSvg />
@@ -44,8 +44,15 @@ export default function Home() {
         </ul>
       </div>
 
-      <div className="mb-[96px] h-[426px]">
-        <Image src={PersonImg} alt="person smiling" priority unoptimized />
+      <div className="mb-[96px] w-[325px] md:w-[438px] xl:w-[540px]">
+        <Image
+          src={HeroBanner}
+          alt="person smiling"
+          priority
+          unoptimized
+          placeholder="blur"
+          layout="responsive"
+        />
       </div>
     </section>
   )
