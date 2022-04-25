@@ -17,7 +17,8 @@ export default function LastCall() {
         </p>
         <a
           href="#"
-          className="text-[14px] text-[#54B6AE] font-medium leading-[24px] flex items-center justify-center gap-[20px] bg-[#F6F6F8] rounded-[4px] py-[14px] px-[32px] mb-[56px]"
+          draggable="false"
+          className="hover:brightness-95 active:brightness-90 transition text-[14px] text-[#54B6AE] font-medium leading-[24px] flex items-center justify-center gap-[20px] bg-[#F6F6F8] rounded-[4px] py-[14px] px-[32px] mb-[56px]"
         >
           <WhatsappSvg />
           Agende sua consulta

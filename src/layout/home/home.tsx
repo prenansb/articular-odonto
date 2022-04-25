@@ -26,7 +26,8 @@ export default function Home() {
 
         <a
           href="#"
-          className="text-[14px] text-[#FFFFFF] font-medium leading-[24px] flex items-center justify-center gap-[10px] bg-[#54B6AE] rounded-[4px] py-[16px] px-[24px] mb-[40px] md:py-[12px] md:mb-[56px] xl:mb-[64px]"
+          draggable="false"
+          className="hover:brightness-95 active:brightness-90 transition text-[14px] text-[#FFFFFF] font-medium leading-[24px] flex items-center justify-center gap-[10px] bg-[#54B6AE] rounded-[4px] py-[16px] px-[24px] mb-[40px] md:py-[12px] md:mb-[56px] xl:mb-[64px]"
         >
           <WhatsappSvg />
           Agende sua consulta

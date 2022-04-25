@@ -26,10 +26,10 @@ export default function Testimonials() {
               1 / 12
             </span>
           </div>
-          <button className="xl:scale-[1.2]">
+          <button className="hover:brightness-90 active:brightness-75 transition xl:scale-[1.2]">
             <ArrowLeftSvg />
           </button>
-          <button className="xl:scale-[1.2]">
+          <button className="hover:brightness-90 active:brightness-75 transition xl:scale-[1.2]">
             <ArrowRightSvg />
           </button>
         </div>

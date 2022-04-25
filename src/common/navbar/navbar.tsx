@@ -18,6 +18,7 @@ export default function Navbar() {
             <li key={link.name}>
               <a
                 href={`#${link.path}`}
+                draggable="false"
                 className="text-[#8F9CA9] text-[14px] leading-[24px] font-normal hover:underline hover:text-[#121212]"
               >
                 {link.name}
@@ -25,9 +26,11 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
+
         <a
           href="#"
-          className="hidden xl:flex items-center justify-center gap-[20px] bg-[#F6F6F8] border border-[#54B6AE] rounded-[4px] py-[12px] px-[24px] text-[14px] text-[#54B6AE] font-medium leading-[24px]"
+          draggable="false"
+          className="hover:bg-[rgba(84,182,172,0.07)] active:bg-[rgba(84,182,172,0.14)] transition hidden xl:flex items-center justify-center gap-[20px] bg-[#F6F6F8] border border-[#54B6AE] rounded-[4px] py-[12px] px-[24px] text-[14px] text-[#54B6AE] font-medium leading-[24px]"
         >
           <WhatsappSvg />
           Agende sua consulta

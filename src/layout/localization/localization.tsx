@@ -57,10 +57,13 @@ export default function Location() {
               key={detail.title}
               className="flex flex-col items-center gap-[8px] xl:flex-row xl:flex-wrap xl:items-start"
             >
-              {detail.icon}
-              <h5 className="text-[20px] text-[#36414C] leading-[27px] font-semibold text-center">
-                {detail.title}
-              </h5>
+              <div className="flex items-center gap-[16px]">
+                {detail.icon}
+                <h5 className="text-[20px] text-[#36414C] leading-[27px] font-semibold text-center">
+                  {detail.title}
+                </h5>
+              </div>
+
               <p className="max-w-[300px] text-[16px] text-[#667F7B] leading-[24px] font-medium text-center xl:text-left">
                 {detail.description}
               </p>

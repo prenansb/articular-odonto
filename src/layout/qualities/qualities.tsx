@@ -59,16 +59,16 @@ export default function Qualities() {
         </div>
 
         <div className="xl:flex xl:flex-col">
-          <span className="hidden text-[#233B37] text-[16px] leading-[24px] font-normal mb-[56px] max-w-[250px] xl:block xl:mb-0 xl:mt-[20px]">
+          <span className="hidden text-[#233B37] text-[20px] leading-[30px] font-normal mb-[56px] max-w-[312px] xl:block xl:mb-0 xl:mt-[20px]">
             Descubra o que nos diferencia de outras clínicas em Fortaleza
           </span>
-          <ul className="flex flex-col gap-[32px] mt-[48px] mb-[64px] md:mt-[76px] xl:mt-[56px] xl:mb-0">
+          <ul className="flex flex-col gap-[28px] mt-[48px] mb-[64px] md:mt-[76px] xl:mt-[56px] xl:mb-0">
             {topics.map(topic => (
               <li
                 key={topic.attribute}
                 className="flex flex-col gap-[8px] justify-center items-center xl:mt-0 xl:items-start"
               >
-                <div className="flex flex-col items-center gap-[8px] xl:flex-row xl:gap-[16px]">
+                <div className="flex flex-col items-center gap-[8px] xl:flex-row xl:gap-[16px] xl:mb-[12px]">
                   <div
                     className={`flex items-center justify-center w-[32px] h-[32px] ${topic.backgroundColor} rounded-[4px]`}
                   >
@@ -79,11 +79,11 @@ export default function Qualities() {
                   </h5>
                 </div>
 
-                <p className="text-[#667F7B] text-[16px] leading-[24px] font-normal text-center max-w-[327px] xl:text-left">
+                <p className="text-[#667F7B] text-[16px] leading-[24px] font-normal text-center max-w-[352px] xl:text-left">
                   {topic.description}
                 </p>
                 {topic.border && (
-                  <div className="w-full h-[1px] mt-[7px] bg-gradient-to-r from-[#233B37] to-[rgba(35, 59, 55, 0)] opacity-50 md:mt-[23px] xl:w-[416px]" />
+                  <div className="w-full h-[1px] mt-[7px] bg-gradient-to-r from-[#233B37] to-[rgba(35, 59, 55, 0)] opacity-50 md:mt-[19px] xl:w-[416px]" />
                 )}
               </li>
             ))}
