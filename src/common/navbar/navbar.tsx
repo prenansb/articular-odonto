@@ -28,8 +28,10 @@ export default function Navbar() {
         <LogoSvg />
         <div
           className={`${
-            open ? 'block fixed inset-0 z-50 h-screen bg-[#F6F7F9] mt-[80px]' : 'hidden'
-          } flex flex-col items-center xl:flex-1`}
+            open
+              ? 'flex flex-col fixed inset-0 z-50 h-screen bg-[#F6F7F9] mt-[80px]'
+              : 'hidden lg:flex'
+          } items-center xl:flex-1`}
         >
           <ul
             className={`${
