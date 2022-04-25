@@ -25,15 +25,15 @@ export default function Accordion() {
           onClick={handleOpenCard}
           className="flex flex-col gap-[23px] cursor-pointer md:w-full mb-[40px] xl:mb-0"
         >
-          <div className="flex items-center gap-[18px] md:gap-[30px]">
+          <span className="flex items-center gap-[18px] md:gap-[30px]">
             <span className="text-[#40C8BD] text-[18px] leading-[27px] font-medium">
               01
             </span>
             <span className="text-[#246B5F] text-[24px] leading-[36px] font-medium md:text-[32px] md:leading-[48px]">
               Clínico geral
             </span>
-          </div>
-          <div className="w-[327px] h-[1px] bg-[#40C8BD] md:w-full" />
+          </span>
+          <span className="w-[327px] h-[1px] bg-[#40C8BD] md:w-full" />
         </button>
         <Card className="xl:hidden" />
       </div>

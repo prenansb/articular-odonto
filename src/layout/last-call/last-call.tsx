@@ -15,12 +15,13 @@ export default function LastCall() {
         <p className="max-w-[267px] text-[16px] text-[#F6F6F8] font-medium leading-[24px] text-center mb-[32px] md:text-[18px] md:leading-[27px] md:max-w-[301px]">
           Agende sua consulta conosco, temos o maior prazer em te receber
         </p>
-        <button className="flex items-center justify-center gap-[20px] bg-[#F6F6F8] rounded-[4px] py-[14px] px-[32px] mb-[56px]">
+        <a
+          href="#"
+          className="text-[14px] text-[#54B6AE] font-medium leading-[24px] flex items-center justify-center gap-[20px] bg-[#F6F6F8] rounded-[4px] py-[14px] px-[32px] mb-[56px]"
+        >
           <WhatsappSvg />
-          <a href="#" className="text-[14px] text-[#54B6AE] font-medium leading-[24px]">
-            Agende sua consulta
-          </a>
-        </button>
+          Agende sua consulta
+        </a>
       </div>
     </div>
   )

@@ -11,7 +11,7 @@ const links = [
 export default function Navbar() {
   return (
     <header className="flex items-center h-[90px] px-[24px] pt-[18px] md:px-[48px] xl:px-0 xl:max-w-[1216px] xl:mx-auto">
-      <nav className="flex justify-between items-center xl:justify-between  w-full">
+      <nav className="flex justify-between items-center xl:justify-between w-full">
         <LogoSvg />
         <ul className="hidden lg:flex items-center gap-[40px]">
           {links.map(link => (
@@ -23,12 +23,13 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
-        <button className="hidden xl:flex items-center justify-center gap-[20px] bg-[#F6F6F8] border border-[#54B6AE] rounded-[4px] py-[12px] px-[24px]">
+        <a
+          href="#"
+          className="hidden xl:flex items-center justify-center gap-[20px] bg-[#F6F6F8] border border-[#54B6AE] rounded-[4px] py-[12px] px-[24px] text-[14px] text-[#54B6AE] font-medium leading-[24px]"
+        >
           <WhatsappSvg />
-          <a href="#" className="text-[14px] text-[#54B6AE] font-medium leading-[24px]">
-            Agende sua consulta
-          </a>
-        </button>
+          Agende sua consulta
+        </a>
         <MenuSvg className="lg:hidden" />
       </nav>
     </header>

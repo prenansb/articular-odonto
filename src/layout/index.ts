@@ -6,4 +6,3 @@ export { default as Localization } from './localization/localization'
 export { default as Qualities } from './qualities/qualities'
 export { default as Testimonials } from './testimonials/testimonials'
 export { default as Treatments } from './treatments/treatments'
-

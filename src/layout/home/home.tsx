@@ -16,20 +16,21 @@ export default function Home() {
           <HeartSvg />
           ESTAMOS AQUI POR VOCÊ
         </span>
-        <h1 className="max-w-[280px] mb-[8px] text-[32px] text-[#233B37] font-bold leading-[48px] text-center md:text-[48px] md:leading-[64px] md:max-w-[405px] md:mb-[24px] xl:text-left xl:mb-[24px]">
+        <h1 className="max-w-[280px] mb-[8px] text-[32px] text-[#233B37] font-bold leading-[48px] text-center md:text-[48px] md:leading-[58px] md:max-w-[405px] md:mb-[24px] xl:text-left xl:mb-[24px]">
           Uma vida melhor, começa com um belo sorriso!
         </h1>
-        <p className="text-[14px] text-[#667F7B] font-normal leading-[21px] text-center max-w-[287px] mb-[32px] md:text-[18px] md:leading-[24px] md:max-w-[399px] md:mb-[40px] xl:text-left xl:mb-[40px]">
+        <p className="text-[14px] text-[#667F7B] font-normal leading-[21px] text-center max-w-[287px] mb-[32px] md:text-[18px] md:leading-[29px] md:max-w-[399px] md:mb-[40px] xl:text-left xl:mb-[40px]">
           Na Articular Odonto você encontra os melhores tratamentos odontológicos e com um
           preço que cabe no seu bolso!
         </p>
 
-        <button className="flex items-center justify-center gap-[10px] bg-[#54B6AE] rounded-[4px] py-[16px] px-[24px] mb-[40px] md:py-[12px] md:mb-[56px] xl:mb-[64px]">
+        <a
+          href="#"
+          className="text-[14px] text-[#FFFFFF] font-medium leading-[24px] flex items-center justify-center gap-[10px] bg-[#54B6AE] rounded-[4px] py-[16px] px-[24px] mb-[40px] md:py-[12px] md:mb-[56px] xl:mb-[64px]"
+        >
           <WhatsappSvg />
-          <a href="#" className="text-[14px] text-[#FFFFFF] font-medium leading-[24px]">
-            Agende sua consulta
-          </a>
-        </button>
+          Agende sua consulta
+        </a>
 
         <ul className="flex flex-col justify-center items-start gap-[24px]">
           {qualities.map(quality => (
@@ -50,7 +51,6 @@ export default function Home() {
           alt="person smiling"
           priority
           unoptimized
-          placeholder="blur"
           layout="responsive"
         />
       </div>

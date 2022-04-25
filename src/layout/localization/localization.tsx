@@ -44,25 +44,27 @@ export default function Location() {
         />
       </div>
 
-      <ul className="flex flex-col items-center gap-[48px] md:flex-row md:flex-wrap md:gap-x-[156px] md:justify-center xl:flex-col xl:items-start xl:gap-[64px] xl:max-w-[320px] xl:mr-[96px]">
-        <span className="hidden max-w-[250px] text-[16px] text-[#233B37] leading-[24px] font-medium text-center md:text-[20px] md:leading-[30px] xl:block xl:text-left">
+      <div>
+        <span className="hidden max-w-[250px] mb-[64px] text-[20px] text-[#233B37] leading-[30px] font-medium text-left xl:block">
           Estamos pertinho de você, vem conhecer a gente!
         </span>
-        {details.map(detail => (
-          <li
-            key={detail.title}
-            className="flex flex-col items-center gap-[8px] xl:mb-[2px] xl:flex-row xl:flex-wrap xl:items-start"
-          >
-            {detail.icon}
-            <h5 className="text-[20px] text-[#36414C] leading-[27px] font-semibold text-center">
-              {detail.title}
-            </h5>
-            <p className="max-w-[300px] text-[16px] text-[#667F7B] leading-[24px] font-medium text-center xl:text-left">
-              {detail.description}
-            </p>
-          </li>
-        ))}
-      </ul>
+        <ul className="flex flex-col items-center gap-[48px] md:flex-row md:flex-wrap md:gap-x-[156px] md:justify-center xl:flex-col xl:items-start xl:gap-[64px] xl:max-w-[320px] xl:mr-[96px]">
+          {details.map(detail => (
+            <li
+              key={detail.title}
+              className="flex flex-col items-center gap-[8px] xl:flex-row xl:flex-wrap xl:items-start"
+            >
+              {detail.icon}
+              <h5 className="text-[20px] text-[#36414C] leading-[27px] font-semibold text-center">
+                {detail.title}
+              </h5>
+              <p className="max-w-[300px] text-[16px] text-[#667F7B] leading-[24px] font-medium text-center xl:text-left">
+                {detail.description}
+              </p>
+            </li>
+          ))}
+        </ul>
+      </div>
     </section>
   )
 }

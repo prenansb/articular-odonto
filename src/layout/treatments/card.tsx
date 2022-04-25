@@ -32,12 +32,13 @@ export default function Card({ className }: CardProps) {
           </li>
         ))}
       </ul>
-      <button className="flex items-center justify-center gap-[16px] self-center w-full bg-[#54B6AE] rounded-[4px] py-[14px] px-[32px]">
+      <a
+        href="#"
+        className="flex items-center justify-center gap-[16px] self-center w-full bg-[#54B6AE] rounded-[4px] py-[14px] px-[32px] text-[14px] text-[#FFFFFF] font-medium leading-[21px]"
+      >
         <WhatsappSvg />
-        <a href="#" className="text-[14px] text-[#FFFFFF] font-medium leading-[21px]">
-          Agende sua consulta
-        </a>
-      </button>
+        Agende sua consulta
+      </a>
     </div>
   )
 }
