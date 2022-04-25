@@ -1,11 +1,11 @@
 import { LogoSvg, MenuSvg, WhatsappSvg } from './svgs'
 
 const links = [
-  { name: 'Qualidades', path: '' },
-  { name: 'Tratamentos', path: '' },
-  { name: 'Sobre nós', path: '' },
-  { name: 'Depoimentos', path: '' },
-  { name: 'Localização', path: '' },
+  { name: 'Qualidades', path: 'qualidades' },
+  { name: 'Tratamentos', path: 'tratamentos' },
+  { name: 'Sobre nós', path: 'sobre' },
+  { name: 'Depoimentos', path: 'depoimentos' },
+  { name: 'Localização', path: 'local' },
 ]
 
 export default function Navbar() {
@@ -15,11 +15,13 @@ export default function Navbar() {
         <LogoSvg />
         <ul className="hidden lg:flex items-center gap-[40px]">
           {links.map(link => (
-            <li
-              className="text-[#8F9CA9] text-[14px] leading-[24px] font-normal"
-              key={link.name}
-            >
-              {link.name}
+            <li key={link.name}>
+              <a
+                href={`#${link.path}`}
+                className="text-[#8F9CA9] text-[14px] leading-[24px] font-normal hover:underline hover:text-[#121212]"
+              >
+                {link.name}
+              </a>
             </li>
           ))}
         </ul>

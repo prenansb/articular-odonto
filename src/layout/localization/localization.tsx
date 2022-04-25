@@ -22,7 +22,10 @@ const details = [
 
 export default function Location() {
   return (
-    <section className="flex flex-col items-center gap-[40px] md:gap-[64px] py-[80px] xl:flex-row xl:justify-between xl:items-end xl:max-w-[1216px] xl:mx-auto">
+    <section
+      id="local"
+      className="flex flex-col items-center gap-[40px] md:gap-[64px] py-[80px] xl:flex-row xl:justify-between xl:items-end xl:max-w-[1216px] xl:mx-auto"
+    >
       <div className="flex flex-col items-center gap-[16px] xl:items-start">
         <span className="flex items-center gap-[8px] text-[14px] text-[#81540E] leading-[18px] font-semibold">
           <MarkerSvg />

@@ -3,7 +3,10 @@ import { ArrowLeftSvg, ArrowRightSvg, ShieldSvg } from './svgs'
 
 export default function Testimonials() {
   return (
-    <section className="flex flex-col items-center overflow-hidden py-[80px] xl:max-w-[1216px] xl:mx-auto xl:overflow-visible">
+    <section
+      id="depoimentos"
+      className="flex flex-col items-center overflow-hidden py-[80px] xl:max-w-[1216px] xl:mx-auto xl:overflow-visible"
+    >
       <div className="flex flex-col items-center mb-[40px] md:mb-[56px] xl:flex-row xl:items-start xl:justify-between xl:w-full">
         <div className="flex flex-col items-center xl:items-start">
           <span className="flex items-center gap-[8px] mb-[8px] text-[14px] text-[#81540E] leading-[18px] font-semibold">

@@ -6,7 +6,10 @@ import { ContactSvg } from './svgs'
 
 export default function AboutUs() {
   return (
-    <section className="flex flex-col items-center pt-[48px] md:pt-[96px] relative ">
+    <section
+      id="sobre"
+      className="flex flex-col items-center pt-[48px] md:pt-[96px] relative "
+    >
       <div className="bg-gradient-to-b from-[#EEF2F6] to-[#E7ECF2] w-full h-[473px] md:h-[690px] xl:h-[739px] absolute top-0" />
       <div className="flex flex-col items-center mb-[48px] z-10 md:mb-[55px] xl:mb-[40px]">
         <span className="flex items-center gap-[8px] mb-[8px] text-[#81540E] text-[14px] leading-[18px] font-semibold xl:mb-[16px]">

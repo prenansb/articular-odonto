@@ -30,7 +30,7 @@ const topics = [
 
 export default function Qualities() {
   return (
-    <section className="bg-gradient-to-b from-[#EEF2F6] to-[#E7ECF2]">
+    <section id="qualidades" className="bg-gradient-to-b from-[#EEF2F6] to-[#E7ECF2]">
       <div className="relative flex flex-col items-center xl:flex-row xl:justify-between xl:items-start xl:max-w-[1216px] xl:mx-auto xl:py-[96px]">
         <div className="px-[12px] py-[14px] absolute top-[-16px] bg-[#E1AB56] rounded-[999px] xl:left-[calc(50%-18px)]">
           <ArrowDownSvg />
