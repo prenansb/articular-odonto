@@ -44,7 +44,7 @@ export default function Navbar() {
                   href={`#${link.path}`}
                   onClick={() => setOpen(false)}
                   draggable="false"
-                  className="text-[#8F9CA9] text-[16px] leading-[24px] md-text-[14px] font-normal hover:underline hover:text-[#121212]"
+                  className="text-[#8F9CA9] text-[16px] leading-[24px] font-normal hover:underline hover:text-[#121212]"
                 >
                   {link.name}
                 </a>
