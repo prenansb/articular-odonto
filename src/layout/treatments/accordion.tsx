@@ -1,10 +1,11 @@
-import { useRef, useState } from 'react'
 import { Card } from '.'
 
 type AccordionProps = {
   informations: {
     number: string
     name: string
+    description: string
+    treatments: (string | null)[]
   }
   state: {
     tabActive: string
@@ -13,22 +14,6 @@ type AccordionProps = {
 }
 
 export default function Accordion({ informations, state }: AccordionProps) {
-  const [openCard, setOpenCard] = useState(false)
-  const accordionRef = useRef(null)
-
-  // function handleOpenCard() {
-  //   const ref = accordionRef.current
-
-  //   if (openCard) {
-  //     ref.style.maxHeight = '0px'
-  //     setOpenCard(false)
-  //     return
-  //   }
-
-  //   ref.style.maxHeight = `${ref.scrollHeight}px`
-  //   setOpenCard(true)
-  // }
-
   const isTabActive = informations.name === state.tabActive
 
   return (
@@ -38,7 +23,7 @@ export default function Accordion({ informations, state }: AccordionProps) {
           onClick={() => state.setTabActive(informations.name)}
           className={`${
             isTabActive ? '' : 'hover:opacity-60'
-          }  transition flex flex-col gap-[19px] cursor-pointer md:w-full mb-[24px] xl:mb-0`}
+          }  transition flex flex-col gap-[19px] cursor-pointer md:w-full`}
         >
           <span className="flex items-center gap-[18px] md:gap-[30px]">
             <span
@@ -59,10 +44,14 @@ export default function Accordion({ informations, state }: AccordionProps) {
           <span
             className={`${
               isTabActive ? 'bg-[#40C8BD]' : 'bg-[#8F9CA9]'
-            } transition w-[327px] h-[1px]  md:w-full`}
+            } transition w-[327px] h-[1px] md:w-full`}
           />
         </button>
-        <Card className="xl:hidden" />
+        <Card
+          className={`${isTabActive ? 'block' : 'hidden'} xl:hidden`}
+          informations={informations}
+          isTabActive={isTabActive}
+        />
       </div>
     </div>
   )

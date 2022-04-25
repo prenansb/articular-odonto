@@ -3,10 +3,34 @@ import { Accordion, Card } from '.'
 import { ClipboardSvg } from './svgs'
 
 const accordions = [
-  { number: '01', name: 'Clínico geral' },
-  { number: '02', name: 'Periodontia' },
-  { number: '03', name: 'Implantodontia' },
-  { number: '04', name: 'Dentística' },
+  {
+    number: '01',
+    name: 'Clínico geral',
+    description:
+      'Seus procedimentos objetivam prevenir, diagnosticar e tratar problemas relacionados a tratamento de canal, extração e restauração.',
+    treatments: ['Tratamento de canal', 'Extração', 'Restauração'],
+  },
+  {
+    number: '02',
+    name: 'Periodontia',
+    description:
+      'Seus procedimentos objetivam prevenir, diagnosticar e tratar problemas e doenças que atingem a gengiva, o ligamento periodontal e o osso alveolar.',
+    treatments: ['Profilaxia', null],
+  },
+  {
+    number: '03',
+    name: 'Implantodontia',
+    description:
+      'O trabalho da implantodontia consiste na reconstrução de parte do dente por meio de um implante, instalado no osso do maxilar ou mandíbula por processo cirúrgico.',
+    treatments: ['Prótese', 'Implante', null],
+  },
+  {
+    number: '04',
+    name: 'Dentística',
+    description:
+      'Os profissionais desta especialidade tratam de clareamentos dos dentes, uso de resinas diretas, facetas, lentes de contato dental, e restaurações estéticas.',
+    treatments: ['Lentes de contato', 'Clareamento', 'Facetas'],
+  },
 ]
 
 export default function Treatments() {
@@ -17,7 +41,7 @@ export default function Treatments() {
       id="tratamentos"
       className="flex flex-col items-center gap-[56px] py-[80px] xl:flex-row xl:justify-between xl:max-w-[1216px] xl:mx-auto xl:pt-[128px] xl:pb-[148px] xl:items-start"
     >
-      <div className="flex flex-col items-center gap-[56px] xl:gap-[32px]">
+      <div className="flex flex-col items-center gap-[32px]">
         <div className="flex flex-col items-center gap-[8px] xl:items-start xl:mb-[32px]">
           <span className="flex items-center gap-[8px] text-[14px] text-[#81540E] leading-[18px] font-semibold md:mb-[8px] ">
             <ClipboardSvg />
@@ -39,7 +63,7 @@ export default function Treatments() {
           />
         ))}
       </div>
-      <Card className="hidden xl:block xl:mt-[40px]" />
+      {/* <Card className="hidden xl:block xl:mt-[40px]" /> */}
     </section>
   )
 }
