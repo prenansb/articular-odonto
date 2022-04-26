@@ -1,11 +1,19 @@
+import Swiper, { Navigation, SwiperOptions } from 'swiper'
 import { Testimonial } from '.'
 import { ArrowLeftSvg, ArrowRightSvg, ShieldSvg } from './svgs'
+
+const swiper = new Swiper('.my-swiper', {
+  modules: [Navigation],
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  spaceBetween: 16,
+} as SwiperOptions)
 
 export default function Testimonials() {
   return (
     <section
       id="depoimentos"
-      className="flex flex-col items-center overflow-hidden py-[80px] xl:max-w-[1216px] xl:mx-auto xl:overflow-visible"
+      className="flex flex-col py-[80px] overflow-hidden xl:max-w-[1216px] xl:mx-auto xl:overflow-visible"
     >
       <div className="flex flex-col items-center mb-[40px] md:mb-[56px] xl:flex-row xl:items-start xl:justify-between xl:w-full">
         <div className="flex flex-col items-center xl:items-start">
@@ -35,16 +43,27 @@ export default function Testimonials() {
         </div>
       </div>
 
-      <div className="flex items-center gap-[16px] xl:w-full xl:gap-[40px]">
-        <Testimonial />
-        <Testimonial />
+      <div className="my-swiper px-[24px]">
+        <div className="swiper-wrapper">
+          <Testimonial />
+          <Testimonial />
+          <Testimonial />
+          <Testimonial />
+          <Testimonial />
+        </div>
       </div>
 
-      <div className="flex items-center gap-[16px] xl:hidden">
-        <button>
+      <div className="flex items-center gap-[16px] mx-auto xl:hidden">
+        <button
+          onClick={() => swiper.slidePrev(300)}
+          className="active:brightness-75 transition"
+        >
           <ArrowLeftSvg />
         </button>
-        <button>
+        <button
+          onClick={() => swiper.slideNext(300)}
+          className="active:brightness-75 transition"
+        >
           <ArrowRightSvg />
         </button>
       </div>

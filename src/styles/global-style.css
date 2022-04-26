@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .scrollbar-off::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 html,
 body {
   font-family: 'Mulish', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
