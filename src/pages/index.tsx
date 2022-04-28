@@ -19,7 +19,7 @@ const Index: NextPage = () => {
       </Head>
       <Home />
       <Qualities />
-      {/* <Treatments /> */}
+      <Treatments />
       {/* <AboutUs /> */}
       {/* <Testimonials /> */}
       {/* <Gallery /> */}
