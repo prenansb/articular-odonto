@@ -23,7 +23,7 @@ export default function Navbar() {
   useEffect(() => toggleScrollbarVisibility(open), [open])
 
   return (
-    <header className="flex items-center h-[90px] px-[24px] pt-[18px] md:px-[48px] xl:px-0 xl:max-w-[1216px] xl:mx-auto">
+    <header className="flex items-center h-[90px] px-[24px] pt-[18px] md:px-[48px] lg:max-w-[1312px] lg:mx-auto">
       <nav className="flex justify-between items-center w-full">
         <LogoSvg />
         <div
