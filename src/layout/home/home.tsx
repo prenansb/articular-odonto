@@ -47,13 +47,7 @@ export default function Home() {
       </div>
 
       <div className="w-[325px] sm:w-[382px] md:w-[438px] xl:w-[540px]">
-        <Image
-          src={HeroBanner}
-          alt="person smiling"
-          priority
-          unoptimized
-          layout="responsive"
-        />
+        <Image src={HeroBanner} alt="person smiling" priority layout="responsive" />
       </div>
     </section>
   )
