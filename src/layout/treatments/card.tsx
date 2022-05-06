@@ -17,8 +17,6 @@ export default function Card({ informations, isTabActive, isDesktop }: CardProps
   const itemRef = useRef<HTMLDivElement>(null)
 
   const setCardHeight = useCallback(() => {
-    console.log('teste')
-
     if (!wrapperRef.current || !itemRef.current) return
 
     if (isTabActive) {
