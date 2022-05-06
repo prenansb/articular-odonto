@@ -8,47 +8,41 @@ export default function AboutUs() {
   return (
     <section
       id="sobre"
-      className="flex flex-col items-center pt-[48px] md:pt-[96px] relative "
+      className="flex flex-col items-center pt-[48px] pb-[161px] mb-[75px] lg:mb-[106px] lg:pb-[380px] md:pt-[96px] md:pb-[290px] bg-gradient-to-b from-[#EEF2F6] to-[#E7ECF2] relative"
     >
-      <div className="bg-gradient-to-b from-[#EEF2F6] to-[#E7ECF2] w-full h-[473px] md:h-[690px] xl:h-[739px] absolute top-0" />
-      <div className="flex flex-col items-center mb-[48px] z-10 md:mb-[55px] xl:mb-[40px]">
-        <span className="flex items-center gap-[8px] mb-[8px] text-[#81540E] text-[14px] leading-[18px] font-semibold xl:mb-[16px]">
-          <ContactSvg /> SOBRE NÓS
-        </span>
-        <h2 className="text-[#233B37] text-[22px] leading-[30px] font-bold text-center max-w-[215px] mb-[24px] md:text-[32px] md:leading-[48px] md:max-w-[650px] xl:mb-[16px]">
-          Somos especialistas em fazer você sorrir!
-        </h2>
-        <p className="text-[#667F7B] text-[16px] leading-[24px] font-medium text-center max-w-[326px] md:text-[22px] md:leading-[33px] md:max-w-[672px] xl:max-w-[846px]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. i tincidunt et varius
-          eget in. Facilisis eget turpis sit sit tortor, orci. Integer proin urna ipsum
-          cras. Aliquam morbi enim, et natoque. Vivamus enim maecenas semper congue in.
-        </p>
-      </div>
-      <div className="flex items-center gap-[11px]">
-        <div className="w-[90px] md:w-[186px] xl:w-[280px]">
+      <span className="flex items-center gap-[8px] mb-[8px] text-[#81540E] text-[14px] leading-[18px] font-semibold lg:mb-[16px]">
+        <ContactSvg /> SOBRE NÓS
+      </span>
+      <h2 className="text-[#233B37] text-[22px] leading-[30px] font-bold text-center mb-[24px] sm:text-[27px] sm:leading-[39px] md:text-[32px] md:leading-[48px] lg:mb-[16px]">
+        Somos especialistas <br className="lg:hidden" /> em fazer você sorrir!
+      </h2>
+      <p className="text-[#667F7B] text-[14px] leading-[22px] font-medium text-center max-w-[326px] sm:text-[17px] sm:leading-[27px] sm:max-w-[500px] md:text-[20px] md:leading-[30px] md:max-w-[600px] lg:max-w-[846px]">
+        Sendo o setor da saúde bucal, consideramos nosso dever essencial garantir a
+        segurança de nossos pacientes, eficácia de nossos tratamentos, transparência em
+        nossas práticas e atendimento em tempo hábil e seguro acima de tudo!
+      </p>
+      <div className="flex items-center gap-[11px] md:gap-[21px] absolute bottom-[19px] translate-y-1/2 md:bottom-0 md:translate-y-1/4">
+        <div className="w-[90px] md:w-[150px] lg:w-[220px]">
           <Image
             src={Costumer}
-            className="rounded-[6px] md:rounded-[10px] xl:rounded-[16px]"
-            alt=""
-            unoptimized
+            className="rounded-[6px] md:rounded-[10px] lg:rounded-[16px]"
+            alt="Foto de um homem sorrindo no dentista"
             layout="responsive"
           />
         </div>
-        <div className="w-[124px] md:w-[256px] xl:w-[384px] ">
+        <div className="w-[124px] md:w-[200px] lg:w-[280px]">
           <Image
             src={Dentistry}
-            className="rounded-[6px] md:rounded-[10px] xl:rounded-[16px]"
-            alt=""
-            unoptimized
+            className="rounded-[6px] md:rounded-[10px] lg:rounded-[16px]"
+            alt="Foto de mulher usando mascará em um consultório"
             layout="responsive"
           />
         </div>
-        <div className="w-[90px] md:w-[186px] xl:w-[280px]">
+        <div className="w-[90px] md:w-[150px] lg:w-[220px]">
           <Image
             src={Appointment}
-            className="rounded-[6px] md:rounded-[10px] xl:rounded-[16px]"
-            alt=""
-            unoptimized
+            className="rounded-[6px] md:rounded-[10px] lg:rounded-[16px]"
+            alt="Foto de uma mulher sorrindo no dentista"
             layout="responsive"
           />
         </div>
