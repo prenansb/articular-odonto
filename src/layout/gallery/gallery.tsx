@@ -1,43 +1,50 @@
 import Image from 'next/image'
+import { useEffect } from 'react'
 import Swiper, { Navigation, SwiperOptions } from 'swiper'
-import { Img1, Img2, Img3, Img4, Img5, Img6, Img7 } from './imgs'
+import { Img1, Img2, Img3, Img4, Img5 } from './imgs'
 import { CameraSvg } from './svgs'
 
-const images = [Img1, Img2, Img3, Img4, Img5, Img6, Img7]
-
-const swiper = new Swiper('.my-swiper2', {
-  modules: [Navigation],
-  centeredSlides: true,
-  slidesPerView: 'auto',
-  spaceBetween: 21,
-  initialSlide: 3,
-} as SwiperOptions)
+const images = [Img1, Img2, Img3, Img2, Img1, Img3, Img5, Img4, Img1]
 
 export default function Gallery() {
+  useEffect(() => {
+    new Swiper('.my-swiper2', {
+      modules: [Navigation],
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      spaceBetween: 21,
+      initialSlide: 4,
+    } as SwiperOptions)
+  }, [])
+
   return (
     <section className="bg-gradient-to-b overflow-hidden from-[#EEF2F6] to-[#E7ECF2]">
-      <div className="pt-[48px] pb-[80px] md:py-[96px]">
+      <div className="pt-[48px] pb-[80px] md:py-[96px] lg:pb-[128px]">
         <div className="flex flex-col items-center mb-[40px] md:mb-[56px]">
           <span className="flex items-center gap-[10px] mb-[8px] text-[#81540E] text-[14px] leading-[18px] font-semibold xl:mb-[16px]">
             <CameraSvg />
             GALERIA
           </span>
-          <h2 className="mb-[16px] text-[#233B37] text-[22px] leading-[30px] font-bold text-center md:text-[32px] md:leading-[48px] xl:mb-[8px]">
+          <h2 className="mb-[16px] text-[#233B37] text-[22px] leading-[30px] font-bold text-center sm:text-[27px] sm:leading-[39px] md:text-[32px] md:leading-[48px] lg:mb-[8px]">
             Nossos resultados
           </h2>
-          <p className="text-[#667F7B] text-[16px] leading-[24px] font-medium text-center max-w-[220px] md:text-[20px] md:leading-[30px] md:max-w-[275px] xl:max-w-[550px]">
-            Resultados confirmados pelo sorriso de nossos pacientes
+          <p className="text-[#667F7B] text-[16px] leading-[24px] font-medium text-center md:text-[20px] md:leading-[30px]">
+            Resultados confirmados pelo <br className="lg:hidden" /> sorriso de nossos
+            pacientes
           </p>
         </div>
         <div className="my-swiper2 px-[24px]">
           <div className="swiper-wrapper">
             {images.map((image, index) => (
-              <div key={index} className="swiper-slide w-fit h-fit">
+              <div
+                key={index}
+                className="swiper-slide w-[189px] md:w-[220px] lg:w-[280px]"
+              >
                 <Image
+                  className="rounded-[6px] md:rounded-[10px] lg:rounded-[16px]"
                   src={image}
-                  width={189}
-                  height={189}
                   alt="Foto de um cliente sorrindo"
+                  layout="responsive"
                 />
               </div>
             ))}
