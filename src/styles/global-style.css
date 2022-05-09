@@ -14,6 +14,10 @@
   .scrollbar-off::-webkit-scrollbar {
     display: none;
   }
+
+  .gradient-1 {
+    background: linear-gradient(100.14deg, #E5A956 0%, #F0C27A 100%);
+  }
 }
 
 html,

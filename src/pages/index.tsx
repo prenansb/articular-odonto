@@ -24,7 +24,7 @@ const Index: NextPage = () => {
       <Testimonials />
       <Gallery />
       <Localization />
-      {/* <LastCall /> */}
+      <LastCall />
     </>
   )
 }
