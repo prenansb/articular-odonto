@@ -1,79 +1,44 @@
-import { InstagramSvg, LogoSvg, WhatsappSvg } from './svgs'
+interface InformationsProps {
+  className: string
+}
 
-const socials = [
-  { name: 'Whatsapp', icon: <WhatsappSvg />, link: '#' },
-  {
-    name: 'Instagram',
-    icon: <InstagramSvg />,
-    link: 'https://www.instagram.com/articularodonto/?hl=pt-br',
-  },
-]
-
-export default function Informations() {
+export default function Informations({ className }: InformationsProps) {
   return (
-    <div className="md:flex md:justify-between md:mt-[48px] xl:mb-[96px]">
-      <div className="">
-        <div className="flex flex-col items-start gap-[32px] mt-[32px] mb-[48px] xl:mb-0 md:mt-0">
-          <LogoSvg
-            className="cursor-pointer"
-            onClick={() => window.scrollTo({ behavior: 'smooth', top: 0 })}
-          />
-          <span className="max-w-[150px] font-medium text-[18px] leading-[27px] text-[#667F7B]">
-            Uma vida melhor, começa com um belo sorriso!
-          </span>
-        </div>
+    <div
+      className={`flex flex-col items-center gap-8 sm:items-start sm:mb-16 sm:gap-0 sm:w-full ${className}`}
+    >
+      <span className="sm:mb-6 text-[22px] text-[#233B37] leading-8 font-semibold">
+        Informações para contato
+      </span>
+
+      <div className="flex flex-col items-center gap-2 sm:items-start sm:mb-8">
+        <span className="font-medium text-xl leading-7 text-[#36414C]">
+          Endereço da clínica
+        </span>
+        <span className="max-w-[254px] text-center sm:text-left font-medium text-[16px] leading-[24px] text-[#667F7B]">
+          <a
+            href="https://goo.gl/maps/wpJ3HSvbTECPLTgQA"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Avenida Humberto Monte - 1440, Fortaleza, Ceará.
+          </a>
+        </span>
       </div>
 
-      <div className="xl:flex xl:gap-[200px]">
-        <div>
-          <span className="hidden md:block md:mb-[24px] text-[24px] text-[#233B37] leading-[27px] font-semibold">
-            Informações para contato
-          </span>
-          <div>
-            <h4 className="mb-[8px] font-medium text-[20px] leading-[27px] text-[#36414C]">
-              Endereço da clínica
-            </h4>
-            <span className="md:max-w-[320px] font-medium text-[16px] leading-[24px] text-[#667F7B]">
-              <a
-                href="https://goo.gl/maps/wpJ3HSvbTECPLTgQA"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                Avenida Humberto Monte - 1440, Fortaleza, Ceará.
-              </a>
-            </span>
-          </div>
-
-          <div className="mt-[32px] mb-[56px] xl:mb-0">
-            <h4 className="mb-[8px] font-medium text-[20px] leading-[27px] text-[#36414C]">
-              Telefone para contato
-            </h4>
-            <span className="font-medium text-[16px] leading-[24px] text-[#667F7B]">
-              <a href="tel:+55-85-3482-6566" target="_self" rel="noreferrer noopener">
-                +55 85 9 9999-9999
-              </a>{' '}
-              ou{' '}
-              <a href="tel:+55-85-3482-6566" target="_self" rel="noreferrer noopener">
-                +55 85 9 9999-9999
-              </a>
-            </span>
-          </div>
-        </div>
-
-        <div className="mb-[48px] xl:mb-0">
-          <span className="mb-[16px] font-semibold text-[24px] leading-[27px] text-[#233B37]">
-            Conecte-se conosco:
-          </span>
-          <ul className="flex items-center gap-[24px] mt-[24px]">
-            {socials.map(social => (
-              <li key={social.name}>
-                <a href={social.link} target="_blank" rel="noreferrer noopener">
-                  {social.icon}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
+      <div className="flex flex-col items-center gap-2 sm:items-start">
+        <span className="font-medium text-xl leading-7 text-[#36414C]">
+          Telefone para contato
+        </span>
+        <span className="font-medium text-[16px] leading-[24px] text-[#667F7B]">
+          <a href="tel:+55-85-3482-6566" target="_self" rel="noreferrer noopener">
+            (85) 9 9999-9999
+          </a>{' '}
+          ou{' '}
+          <a href="tel:+55-85-3482-6566" target="_self" rel="noreferrer noopener">
+            (85) 9 9999-9999
+          </a>
+        </span>
       </div>
     </div>
   )

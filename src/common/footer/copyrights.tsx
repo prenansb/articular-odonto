@@ -1,24 +1,26 @@
-import { GhostSvg } from './svgs'
+import { HeartSvg } from './svgs'
 
-export default function Copyrights() {
+interface CopyrightsProps {
+  className: string
+}
+
+export default function Copyrights({ className }: CopyrightsProps) {
   return (
-    <>
-      <div className="flex flex-col mt-[40px] xl:flex-row xl:items-center xl:justify-between xl:my-[0px]">
-        <div className="font-medium text-[18px] md:text-[20px] leading-[30px] text-[#343a40bf] text-center">
-          Articular Odonto.
-          <br className="md:hidden" /> Todos os direitos reservados
-        </div>
-        <div className="flex items-center justify-center gap-[16px] my-[32px] text-[#233b37bf] text-[18px] md:text-[20px] leading-[30px] font-semibold">
-          Desenvolvido por:{' '}
-          <a
-            href="https://octane-xi.vercel.app/"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            <GhostSvg />
-          </a>
-        </div>
+    <div
+      className={`flex flex-col items-center w-full relative pt-10 lg:flex-row lg:justify-between ${className}`}
+    >
+      <div className="absolute top-0 h-[1px] w-[calc(100%-48px)] sm:w-[calc(100%-96px)] bg-[#9CA8B7] opacity-50 lg:w-full" />
+
+      <div className="lg:order-2 font-medium text-[18px] leading-[30px] text-[#343a40bf] text-center">
+        Articular Odonto.
+        <br className="sm:hidden" /> Todos os direitos reservados.
       </div>
-    </>
+      <span className="mt-[30px] lg:mt-0 text-center text-[#233b37bf] text-[18px] leading-[30px] font-semibold">
+        Feito com <HeartSvg className="inline" /> por{' '}
+        <a href="https://octanestd.com/" target="_blank" rel="noreferrer noopener">
+          Octane Studio
+        </a>
+      </span>
+    </div>
   )
 }
