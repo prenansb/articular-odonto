@@ -1,14 +1,8 @@
 import { LogoSvg } from './svgs'
 
-interface SloganProps {
-  className: string
-}
-
-export default function Slogan({ className }: SloganProps) {
+export default function Slogan() {
   return (
-    <div
-      className={`flex flex-col items-center mb-12 gap-[32px] sm:items-start sm:pl-[48px] sm:gap-6 sm:mb-0 lg:pl-0 lg:gap-4 ${className}`}
-    >
+    <div className="flex flex-col items-center mb-12 gap-[32px] sm:items-start sm:pl-[48px] sm:gap-6 sm:mb-0 lg:pl-0 lg:gap-4 sm:col-[1]">
       <LogoSvg
         className="cursor-pointer"
         onClick={() => window.scrollTo({ behavior: 'smooth', top: 0 })}

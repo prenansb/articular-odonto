@@ -1,12 +1,6 @@
-interface InformationsProps {
-  className: string
-}
-
-export default function Informations({ className }: InformationsProps) {
+export default function Informations() {
   return (
-    <div
-      className={`flex flex-col items-center gap-8 sm:items-start sm:mb-16 sm:gap-0 sm:w-full ${className}`}
-    >
+    <div className="flex flex-col items-center gap-8 sm:items-start sm:mb-16 sm:gap-0 sm:w-full sm:col-[2] lg:col-[3]">
       <span className="sm:mb-6 text-[22px] text-[#233B37] leading-8 font-semibold">
         Informações para contato
       </span>

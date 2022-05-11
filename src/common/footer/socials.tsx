@@ -1,9 +1,5 @@
 import { InstagramSvg, WhatsappSvg } from './svgs'
 
-interface SocialsProps {
-  className: string
-}
-
 const socials = [
   { name: 'Whatsapp', icon: <WhatsappSvg />, link: '#' },
   {
@@ -13,11 +9,9 @@ const socials = [
   },
 ]
 
-export default function Socials({ className }: SocialsProps) {
+export default function Socials() {
   return (
-    <div
-      className={`flex flex-col items-center mt-12 gap-6 mb-[88px] sm:mt-0 sm:items-start sm:w-full lg:mt-0 ${className}`}
-    >
+    <div className="flex flex-col items-center mt-12 gap-6 mb-[88px] sm:mt-0 sm:items-start sm:w-full lg:mt-0 sm:col-[2] lg:col-[4]">
       <span className="font-semibold text-2xl leading-7 text-[#233B37]">
         Conecte-se conosco
       </span>

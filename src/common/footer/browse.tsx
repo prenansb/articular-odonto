@@ -1,7 +1,3 @@
-interface BrowseProps {
-  className: string
-}
-
 const links = [
   { name: 'Qualidades', path: 'qualidades' },
   { name: 'Tratamentos', path: 'tratamentos' },
@@ -10,11 +6,9 @@ const links = [
   { name: 'Localização', path: 'local' },
 ]
 
-export default function Browse({ className }: BrowseProps) {
+export default function Browse() {
   return (
-    <div
-      className={`flex flex-col gap-6 items-center mb-16 sm:items-start sm:w-full lg:w-fit lg:justify-self-start ${className}`}
-    >
+    <div className="flex flex-col gap-6 items-center mb-16 sm:items-start sm:w-full lg:w-fit lg:justify-self-start lg:col-[2]">
       <span className="text-[22px] text-[#233B37] leading-8 font-semibold ">Navegue</span>
       <ul className="flex flex-col gap-8 items-center sm:items-start sm:gap-x-20 sm:flex-wrap sm:max-h-36 lg:gap-6 lg:max-h-fit">
         {links.map(link => (
