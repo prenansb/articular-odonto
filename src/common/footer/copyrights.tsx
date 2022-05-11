@@ -9,7 +9,7 @@ export default function Copyrights({ className }: CopyrightsProps) {
     <div
       className={`flex flex-col items-center w-full relative pt-10 lg:flex-row lg:justify-between ${className}`}
     >
-      <div className="absolute top-0 h-[1px] w-[calc(100%-48px)] sm:w-[calc(100%-96px)] bg-[#9CA8B7] opacity-50 lg:w-full" />
+      <div className="absolute top-0 h-[1px] w-[calc(100%-48px)] sm:w-[calc(100%-96px)] lg:w-full bg-[#9CA8B7] opacity-50 " />
 
       <div className="lg:order-2 font-medium text-[18px] leading-[30px] text-[#343a40bf] text-center">
         Articular Odonto.
