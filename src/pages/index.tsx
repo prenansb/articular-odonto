@@ -20,7 +20,7 @@ const Index: NextPage = () => {
         <meta name="description" content="Descrição aqui" />
         <meta name="image" content="/imgs/banner-share.png" />
         <meta property="og:url" content="https://articular-odonto.vercel.app/" />
-        <meta property="og:title" content="A Twitter for My Sister" />
+        <meta property="og:title" content="Articular Odonto" />
         <meta property="og:description" content="Uma descrição aqui" />
         <meta property="og:image" content="/imgs/banner-share.png" />
         <meta name="twitter:card" content="summary_large_image" />
