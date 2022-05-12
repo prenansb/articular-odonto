@@ -8,13 +8,17 @@ const images = [Img1, Img2, Img3, Img2, Img1, Img3, Img5, Img4, Img1]
 
 export default function Gallery() {
   useEffect(() => {
-    new Swiper('.my-swiper2', {
-      modules: [Navigation],
-      centeredSlides: true,
-      slidesPerView: 'auto',
-      spaceBetween: 21,
-      initialSlide: 4,
-    } as SwiperOptions)
+    try {
+      new Swiper('.my-swiper2', {
+        modules: [Navigation],
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        spaceBetween: 21,
+        initialSlide: 4,
+      } as SwiperOptions)
+    } catch (e) {
+      console.log(e)
+    }
   }, [])
 
   return (

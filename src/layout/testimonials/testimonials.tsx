@@ -10,7 +10,7 @@ export default function Testimonials() {
   const [sliderLastIndex, setSliderLastIndex] = useState<number>(0)
 
   useEffect(() => {
-    const swiper = new Swiper('.my-swiper', {
+    const swiperInstance = new Swiper('.my-swiper', {
       modules: [Navigation],
       centeredSlides: true,
       slidesPerView: 'auto',
@@ -26,17 +26,17 @@ export default function Testimonials() {
         },
       },
       on: {
-        init: (swiper: any) => {
-          setSliderIndex(swiper.activeIndex)
-          setSliderLastIndex(swiper.snapGrid.length)
+        init: (props: any) => {
+          setSliderIndex(props.activeIndex)
+          setSliderLastIndex(props.snapGrid.length)
         },
-        slideChange: swiper => {
-          setSliderIndex(swiper.activeIndex)
+        slideChange: props => {
+          setSliderIndex(props.activeIndex)
         },
       },
     } as SwiperOptions)
 
-    setSwiper(swiper)
+    setSwiper(swiperInstance)
   }, [])
 
   return (
