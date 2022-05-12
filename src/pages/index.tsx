@@ -25,6 +25,10 @@ const Index: NextPage = () => {
         <meta property="og:url" content="https://articular-odonto.vercel.app/" />
         <meta property="og:title" content="Articular Odonto" />
         <meta property="og:description" content="Uma descrição aqui" />
+        <meta
+          property="og:image"
+          content="https://articular-odonto.vercel.app/imgs/banner-share.png"
+        />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <Home />
