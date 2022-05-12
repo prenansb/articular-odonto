@@ -17,8 +17,9 @@ function MyApp({ Component, pageProps }: AppProps) {
           crossOrigin="anonymous"
         />
         <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
       </Head>
       <Navbar />
       <Component {...pageProps} />
