@@ -24,6 +24,9 @@ const Index: NextPage = () => {
         <meta property="og:description" content="Uma descrição aqui" />
         <meta property="og:image" content="/imgs/banner-share.png" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Articular Odonto" />
+        <meta name="twitter:description" content="Uma descrição aqui" />
+        <meta name="twitter:image" content="/imgs/banner-share.png" />
       </Head>
       <Home />
       <Qualities />
