@@ -9,7 +9,7 @@ const links = [
   { name: 'Localização', path: 'local' },
 ]
 
-function toggleScrollbarVisibility(menuOpen: Boolean) {
+function toggleScrollbarVisibility(menuOpen: boolean) {
   if (menuOpen) {
     document.body.style.overflow = 'hidden'
     return

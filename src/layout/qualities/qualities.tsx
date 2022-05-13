@@ -53,7 +53,6 @@ export default function Qualities() {
               src={RoomImg}
               className="rounded-[4px]"
               alt="room"
-              unoptimized
               layout="responsive"
             />
           </div>

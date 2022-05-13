@@ -24,7 +24,7 @@ export default function Svg({ ...props }) {
         fill="#64A49F"
       />
       <mask
-        id="path-19-outside-1_227_197"
+        id="path-19-outside-1_227_1972"
         maskUnits="userSpaceOnUse"
         x="3.5"
         y="5.003"
@@ -44,7 +44,7 @@ export default function Svg({ ...props }) {
         stroke="#457A75"
         strokeWidth="2"
         strokeMiterlimit="10"
-        mask="url(#path-19-outside-1_227_197)"
+        mask="url(#path-19-outside-1_227_1972)"
       />
     </svg>
   )

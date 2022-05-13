@@ -16,7 +16,21 @@ const Index: NextPage = () => {
   return (
     <>
       <Head>
+        <meta name="theme-color" content="#F6F7F9" />
         <title>Articular Odonto</title>
+        <meta name="description" content="Descrição aqui" />
+        <meta
+          name="image"
+          content="https://articular-odonto.vercel.app/imgs/banner-share.png"
+        />
+        <meta property="og:url" content="https://articular-odonto.vercel.app/" />
+        <meta property="og:title" content="Articular Odonto" />
+        <meta property="og:description" content="Uma descrição aqui" />
+        <meta
+          property="og:image"
+          content="https://articular-odonto.vercel.app/imgs/banner-share.png"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <PopUp />
 

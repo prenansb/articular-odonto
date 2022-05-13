@@ -1,16 +1,8 @@
 import { HeartSvg } from './svgs'
 
-interface CopyrightsProps {
-  className: string
-}
-
-export default function Copyrights({ className }: CopyrightsProps) {
+export default function Copyrights() {
   return (
-    <div
-      className={`flex flex-col items-center w-full relative pt-10 lg:flex-row lg:justify-between ${className}`}
-    >
-      <div className="absolute top-0 h-[1px] w-[calc(100%-48px)] sm:w-[calc(100%-96px)] lg:w-full bg-[#9CA8B7] opacity-50 " />
-
+    <div className="flex flex-col items-center w-[calc(100%-48px)] sm:w-[calc(100%-96px)] lg:w-full border-t border-[#9ca8b77f] pt-10 lg:flex-row lg:justify-between sm:col-[1/3] sm:justify-self-center lg:col-[1/5] lg:mt-[22px]">
       <div className="lg:order-2 font-medium text-[18px] leading-[30px] text-[#343a40bf] text-center">
         Articular Odonto.
         <br className="sm:hidden" /> Todos os direitos reservados.
