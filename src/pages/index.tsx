@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import { PopUp } from '../common'
 import {
   AboutUs,
   Gallery,
@@ -8,7 +9,7 @@ import {
   Localization,
   Qualities,
   Testimonials,
-  Treatments,
+  Treatments
 } from '../layout'
 
 const Index: NextPage = () => {
@@ -17,6 +18,8 @@ const Index: NextPage = () => {
       <Head>
         <title>Articular Odonto</title>
       </Head>
+      <PopUp />
+
       <Home />
       <Qualities />
       <Treatments />
