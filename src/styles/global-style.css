@@ -47,13 +47,3 @@ ul {
   padding: 0;
   margin: 0;
 }
-
-.react-modal-sheet-header {
-  background-color: #EAEFF4;
-}
-.react-modal-sheet-drag-indicator {
-  background: #D5DDE5;
-}
-.react-modal-sheet-content {
-  background-color: #EAEFF4;
-}

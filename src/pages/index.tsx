@@ -9,7 +9,7 @@ import {
   Localization,
   Qualities,
   Testimonials,
-  Treatments
+  Treatments,
 } from '../layout'
 
 const Index: NextPage = () => {
