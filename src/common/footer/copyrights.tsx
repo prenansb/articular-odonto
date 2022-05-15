@@ -9,7 +9,11 @@ export default function Copyrights() {
       </div>
       <span className="mt-[30px] lg:mt-0 text-center text-[#233b37bf] text-[18px] leading-[30px] font-semibold">
         Feito com <HeartSvg className="inline" /> por{' '}
-        <a href="https://octanestd.com/" target="_blank" rel="noreferrer noopener">
+        <a
+          href="https://www.instagram.com/octane.std/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           Octane Studio
         </a>
       </span>
