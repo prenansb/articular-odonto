@@ -72,7 +72,7 @@ export default function PopUp() {
   return (
     <div
       ref={popUpRef}
-      className="sm:invisible touch-none fixed bg-[#EAEFF4] transition ease-out shadow-[0_-2px_12px_#0000001e] pb-4 pt-6 rounded-t-2xl bottom-0 z-10 w-full px-6 invisible flex items-center gap-8 justify-center"
+      className="sm:invisible touch-none fixed will-change-transform bg-[#EAEFF4] transition ease-out shadow-[0_-2px_12px_#0000001e] pb-4 pt-6 rounded-t-2xl bottom-0 z-10 w-full px-6 invisible flex items-center gap-8 justify-center"
     >
       <div
         onTouchStart={handlePopUpStart}
