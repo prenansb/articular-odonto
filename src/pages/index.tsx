@@ -14,7 +14,7 @@ import {
 
 const Index: NextPage = () => {
   return (
-    <>
+    <main>
       <Head>
         <meta name="theme-color" content="#F6F7F9" />
         <title>Articular Odonto</title>
@@ -42,7 +42,7 @@ const Index: NextPage = () => {
       <Gallery />
       <Localization />
       <LastCall />
-    </>
+    </main>
   )
 }
 
