@@ -49,7 +49,7 @@ export default function Treatments() {
             <ClipboardSvg />
             TRATAMENTOS
           </span>
-          <h2 className="text-[22px] text-[#233B37 ] leading-[30px] font-bold sm:text-[27px] sm:leading-[39px] md:text-[32px] md:leading-[48px]">
+          <h2 className="text-[22px] text-[#233B37] leading-[30px] font-bold sm:text-[27px] sm:leading-[39px] md:text-[32px] md:leading-[48px]">
             Nossa especialidade
           </h2>
           <p className="max-w-[286px] text-[16px] text-[#667F7B] leading-[24px] font-medium text-center sm:text-[18px] sm:leading-[27px] sm:max-w-[370px] md:text-[20px] md:leading-[30px] lg:text-left">
