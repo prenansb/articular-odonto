@@ -1,34 +1,5 @@
 import { ClockSvg, MarkerSvg, PhoneSvg, SecondaryMarkerSvg } from './svgs'
 
-const details = [
-  {
-    title: 'Horários de atendimento',
-    description: `Segunda a Sexta: 08h30 às 19h00
-      Sábado: 08h30 às 12h00`,
-    href: '',
-    target: '',
-    disabled: 'cursor-default pointer-events-none',
-    icon: <ClockSvg />,
-  },
-  {
-    title: 'Endereço da clínica',
-    description: `Avenida Humberto Monte - 1440, 
-    Fortaleza, Ceará.`,
-    href: 'https://goo.gl/maps/wpJ3HSvbTECPLTgQA',
-    target: '_blank',
-    disabled: '',
-    icon: <SecondaryMarkerSvg />,
-  },
-  {
-    title: 'Telefone para contato',
-    description: `(85) 9.999-9999 ou (85) 9.999-9999 `,
-    href: 'tel:+55-85-3482-6566',
-    target: '_self',
-    disabled: '',
-    icon: <PhoneSvg />,
-  },
-]
-
 export default function Location() {
   return (
     <section id="local" className="py-[80px] lg:max-w-[1312px] lg:px-[48px] lg:mx-auto">
@@ -57,30 +28,52 @@ export default function Location() {
         />
 
         <ul className="flex flex-col items-center gap-[48px] md:flex-row md:flex-wrap md:gap-x-[156px] md:justify-center lg:flex-col lg:gap-[64px] lg:max-w-[320px]">
-          {details.map(detail => (
-            <li
-              key={detail.title}
-              className="flex flex-col items-center gap-[8px] lg:flex-row lg:flex-wrap"
-            >
-              <div className="flex flex-col items-center gap-[8px] lg:flex-row">
-                {detail.icon}
-                <h5 className="text-[20px] text-[#36414C] leading-[27px] font-semibold text-center">
-                  {detail.title}
-                </h5>
-              </div>
+          <li className="flex flex-col items-center gap-[8px] lg:flex-row lg:flex-wrap">
+            <div className="flex flex-col items-center gap-[8px] lg:flex-row">
+              <ClockSvg />
+              <h5 className="text-[20px] text-[#36414C] leading-[27px] font-semibold text-center">
+                Horários de atendimento
+              </h5>
+            </div>
 
-              <span className="max-w-[300px] text-[16px] text-[#667F7B] leading-[24px] font-medium text-center lg:text-left">
-                <a
-                  className={detail.disabled}
-                  href={detail.href}
-                  target={detail.target}
-                  rel="noreferrer noopener"
-                >
-                  {detail.description}
-                </a>
-              </span>
-            </li>
-          ))}
+            <span className="max-w-[300px] text-[16px] text-[#667F7B] leading-[24px] font-medium text-center lg:text-left">
+              Segunda a Sexta: 08h30 às 19h00 Sábado: 08h30 às 12h00
+            </span>
+          </li>
+          <li className="flex flex-col items-center gap-[8px] lg:flex-row lg:flex-wrap">
+            <div className="flex flex-col items-center gap-[8px] lg:flex-row">
+              <SecondaryMarkerSvg />
+              <h5 className="text-[20px] text-[#36414C] leading-[27px] font-semibold text-center">
+                Endereço da clínica
+              </h5>
+            </div>
+
+            <a
+              href="https://goo.gl/maps/wpJ3HSvbTECPLTgQA"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="max-w-[300px] text-[16px] text-[#667F7B] leading-[24px] font-medium text-center lg:text-left"
+            >
+              Avenida Humberto Monte - 1440, Fortaleza, Ceará.
+            </a>
+          </li>
+          <li className="flex flex-col items-center gap-[8px] lg:flex-row lg:flex-wrap">
+            <div className="flex flex-col items-center gap-[8px] lg:flex-row">
+              <PhoneSvg />
+              <h5 className="text-[20px] text-[#36414C] leading-[27px] font-semibold text-center">
+                Telefone para contato
+              </h5>
+            </div>
+
+            <a
+              href="tel:+55-85-3482-6566"
+              target="_self"
+              rel="noreferrer noopener"
+              className="max-w-[300px] text-[16px] text-[#667F7B] leading-[24px] font-medium text-center lg:text-left"
+            >
+              (85) 9.999-9999 ou (85) 9.999-9999
+            </a>
+          </li>
         </ul>
       </div>
     </section>
