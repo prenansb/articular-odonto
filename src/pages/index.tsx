@@ -17,15 +17,24 @@ const Index: NextPage = () => {
     <main>
       <Head>
         <meta name="theme-color" content="#F6F7F9" />
-        <title>Articular Odonto</title>
-        <meta name="description" content="Descrição aqui" />
+        <title>Articular Odonto | Sua clínica odontológica popular</title>
+        <meta
+          name="description"
+          content="Obtenha os melhores serviços odontológicos pelo melhor preço. Cuide da sua saúde bocal."
+        />
         <meta
           name="image"
           content="https://articular-odonto.vercel.app/imgs/banner-share.png"
         />
         <meta property="og:url" content="https://articular-odonto.vercel.app/" />
-        <meta property="og:title" content="Articular Odonto" />
-        <meta property="og:description" content="Uma descrição aqui" />
+        <meta
+          property="og:title"
+          content="Articular Odonto | Sua clínica odontológica popular"
+        />
+        <meta
+          property="og:description"
+          content="Obtenha os melhores serviços odontológicos pelo melhor preço. Cuide da sua saúde bocal."
+        />
         <meta
           property="og:image"
           content="https://articular-odonto.vercel.app/imgs/banner-share.png"
