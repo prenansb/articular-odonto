@@ -83,7 +83,7 @@ export default function Qualities() {
                   {topic.description}
                 </p>
                 {topic.border && (
-                  <div className="w-[327px] md:w-[416px] lg:w-full xl:w-[416px] h-[1px] mt-[7px] bg-gradient-to-r from-[#233B37] to-[rgba(35, 59, 55, 0)] opacity-50 sm:mt-[13px] md:mt-[19px]" />
+                  <div className="w-[327px] md:w-[416px] lg:w-full xl:w-[416px] h-[1px] mt-[7px] bg-[#233B37] lg:bg-gradient-to-r lg:from-[#233B37] lg:to-[rgba(35, 59, 55, 0)] opacity-50 sm:mt-[13px] md:mt-[19px]" />
                 )}
               </li>
             ))}
