@@ -4,6 +4,39 @@ import type SwiperClass from 'swiper/types/swiper-class'
 import { Testimonial } from '.'
 import { ArrowLeftSvg, ArrowRightSvg, ShieldSvg } from './svgs'
 
+const patientReviews = [
+  {
+    key: 1,
+    patient: 'Felipe Batista',
+    review:
+      '"Fiquei impressionado com a equipe. Profissionais muito experientes e não tentaram me convencer sobre procedimentos que eu não precisava necessariamente. Recomendo a todos que precisam de atendimento odontológico."',
+  },
+  {
+    key: 2,
+    patient: 'Franscisco Sousa',
+    review:
+      '"Primeira vez fazendo uma limpeza profunda. O Dentista foi incrível. Ele me deixou à vontade e fez um excelente trabalho. O consultório está sempre limpo e a equipe é profissional. Eu recomendo."',
+  },
+  {
+    key: 3,
+    patient: 'Claúdio',
+    review:
+      '"Tive que fazer uma consulta de emergência no mesmo dia devido a dores nos dentes. O dentista e toda a equipe foram compreensivos, empáticos e realmente me fizeram sentir que eles queriam que eu melhorasse rapidamente."',
+  },
+  {
+    key: 4,
+    patient: 'Amanda',
+    review:
+      '"Meus dentistas foram incríveis. Eu costumava ter más experiências com limpezas dentárias devido a algum nível de dor. Mas eles lidou com isso com extremo cuidado."',
+  },
+  {
+    key: 5,
+    patient: 'Monique Ribeiro',
+    review:
+      '"Um lugar limpo e maravilhoso com um dentista que você realmente espera visitar. A equipe é atenciosa e você nunca precisa esperar. Excelentes dentistas"',
+  },
+]
+
 export default function Testimonials() {
   const [swiper, setSwiper] = useState<SwiperClass>()
   const [sliderIndex, setSliderIndex] = useState<number>(1)
@@ -81,11 +114,9 @@ export default function Testimonials() {
 
         <div className="my-swiper px-[24px] md:px-[48px] lg:px-0">
           <div className="swiper-wrapper">
-            <Testimonial />
-            <Testimonial />
-            <Testimonial />
-            <Testimonial />
-            <Testimonial />
+            {patientReviews.map(p => (
+              <Testimonial key={p.key} patient={p.patient} review={p.review} />
+            ))}
           </div>
         </div>
 
