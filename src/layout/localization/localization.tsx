@@ -5,17 +5,26 @@ const details = [
     title: 'Horários de atendimento',
     description: `Segunda a Sexta: 08h30 às 19h00
       Sábado: 08h30 às 12h00`,
+    href: '',
+    target: '',
+    disabled: 'cursor-default pointer-events-none',
     icon: <ClockSvg />,
   },
   {
     title: 'Endereço da clínica',
     description: `Avenida Humberto Monte - 1440, 
     Fortaleza, Ceará.`,
+    href: 'https://goo.gl/maps/wpJ3HSvbTECPLTgQA',
+    target: '_blank',
+    disabled: '',
     icon: <SecondaryMarkerSvg />,
   },
   {
     title: 'Telefone para contato',
     description: `(85) 9.999-9999 ou (85) 9.999-9999 `,
+    href: 'tel:+55-85-3482-6566',
+    target: '_self',
+    disabled: '',
     icon: <PhoneSvg />,
   },
 ]
@@ -60,9 +69,16 @@ export default function Location() {
                 </h5>
               </div>
 
-              <p className="max-w-[300px] text-[16px] text-[#667F7B] leading-[24px] font-medium text-center lg:text-left">
-                {detail.description}
-              </p>
+              <span className="max-w-[300px] text-[16px] text-[#667F7B] leading-[24px] font-medium text-center lg:text-left">
+                <a
+                  className={detail.disabled}
+                  href={detail.href}
+                  target={detail.target}
+                  rel="noreferrer noopener"
+                >
+                  {detail.description}
+                </a>
+              </span>
             </li>
           ))}
         </ul>
