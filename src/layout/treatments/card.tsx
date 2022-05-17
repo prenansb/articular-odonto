@@ -38,7 +38,7 @@ export default function Card({ informations, isTabActive, isDesktop }: CardProps
 
   return (
     <div
-      data-aos="fade-left"
+      data-aos={isDesktop ? 'fade-left' : 'none'}
       ref={wrapperRef}
       className={`${isTabActive ? 'block' : 'hidden'} ${
         isDesktop ? 'hidden lg:block' : 'lg:hidden'
