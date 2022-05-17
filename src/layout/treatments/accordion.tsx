@@ -17,7 +17,10 @@ export default function Accordion({ informations, state }: AccordionProps) {
   const isTabActive = informations.name === state.tabActive
 
   return (
-    <li className="flex flex-col items-center w-full md:items-start lg:w-[384px]">
+    <li
+      data-aos="fade-right"
+      className="flex flex-col items-center w-full md:items-start lg:w-[384px]"
+    >
       <button
         onClick={() => state.setTabActive(informations.name)}
         className={`${

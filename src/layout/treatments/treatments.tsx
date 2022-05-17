@@ -44,7 +44,10 @@ export default function Treatments() {
       className="flex justify-between py-[80px] lg:max-w-[1312px] lg:px-[48px] lg:mx-auto xl:pt-[128px] xl:pb-[148px]"
     >
       <div className="w-full lg:w-auto">
-        <div className="flex flex-col items-center mb-[56px] gap-[8px] lg:items-start lg:mb-[64px]">
+        <div
+          data-aos="fade-right"
+          className="flex flex-col items-center mb-[56px] gap-[8px] lg:items-start lg:mb-[64px]"
+        >
           <span className="flex items-center gap-[8px] text-[14px] text-[#81540E] leading-[18px] font-semibold sm:mb-[4px] md:mb-[8px] ">
             <ClipboardSvg />
             TRATAMENTOS

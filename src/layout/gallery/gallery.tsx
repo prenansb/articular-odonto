@@ -29,10 +29,17 @@ export default function Gallery() {
             <CameraSvg />
             GALERIA
           </span>
-          <h2 className="mb-[16px] text-[#233B37] text-[22px] leading-[30px] font-bold text-center sm:text-[27px] sm:leading-[39px] md:text-[32px] md:leading-[48px] lg:mb-[8px]">
+          <h2
+            data-aos="fade-up"
+            className="mb-[16px] text-[#233B37] text-[22px] leading-[30px] font-bold text-center sm:text-[27px] sm:leading-[39px] md:text-[32px] md:leading-[48px] lg:mb-[8px]"
+          >
             Nossos resultados
           </h2>
-          <p className="text-[#667F7B] text-[16px] leading-[24px] font-medium text-center md:text-[20px] md:leading-[30px]">
+          <p
+            data-aos="fade-left"
+            data-aos-delay="100"
+            className="text-[#667F7B] text-[16px] leading-[24px] font-medium text-center md:text-[20px] md:leading-[30px]"
+          >
             Resultados confirmados pelo <br className="lg:hidden" /> sorriso de nossos
             pacientes
           </p>
@@ -41,11 +48,12 @@ export default function Gallery() {
           <div className="swiper-wrapper">
             {images.map((image, index) => (
               <div
+                data-aos="fade-in"
                 key={index}
                 className="swiper-slide w-[189px] md:w-[220px] lg:w-[280px]"
               >
                 <Image
-                  className="rounded-[6px] md:rounded-[10px] lg:rounded-[16px]"
+                  className="select-none rounded-[6px] md:rounded-[10px] lg:rounded-[16px]"
                   src={image}
                   alt="Foto de um cliente sorrindo"
                   layout="responsive"

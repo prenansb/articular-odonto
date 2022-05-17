@@ -11,7 +11,10 @@ const qualities = [
 export default function Home() {
   return (
     <section className="flex flex-col items-center mb-[96px] gap-[56px] sm:gap-[76px] md:gap-[96px] lg:gap-0 lg:flex-row lg:items-start lg:justify-between lg:max-w-[1312px] lg:px-[48px] lg:mx-auto lg:mt-[26px]">
-      <div className="flex flex-col items-center mt-[40px] lg:items-start xl:mt-[80px]">
+      <div
+        data-aos="fade-right"
+        className="flex flex-col items-center mt-[40px] lg:items-start xl:mt-[80px]"
+      >
         <span className="flex items-center gap-[8px] mb-[16px] text-[14px] text-[#81540E] font-semibold leading-[18px] text-center">
           <HeartSvg />
           ESTAMOS AQUI POR VOCÊ
@@ -46,7 +49,10 @@ export default function Home() {
         </ul>
       </div>
 
-      <div className="w-[325px] sm:w-[382px] md:w-[438px] xl:w-[540px]">
+      <div
+        data-aos="fade-left"
+        className="w-[325px] sm:w-[382px] md:w-[438px] xl:w-[540px]"
+      >
         <Image src={HeroBanner} alt="person smiling" priority layout="responsive" />
       </div>
     </section>

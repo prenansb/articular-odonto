@@ -79,7 +79,10 @@ export default function Testimonials() {
     >
       <div className="overflow-hidden">
         <div className="flex flex-col items-center mb-[40px] sm:mb-[48px] md:mb-[56px] lg:flex-row lg:items-start lg:justify-between lg:w-full">
-          <div className="flex flex-col items-center lg:items-start">
+          <div
+            data-aos="fade-right"
+            className="flex flex-col items-center lg:items-start"
+          >
             <span className="flex items-center gap-[8px] mb-[8px] text-[14px] text-[#81540E] leading-[18px] font-semibold">
               <ShieldSvg /> CONFIANÇA
             </span>
@@ -91,7 +94,10 @@ export default function Testimonials() {
             </p>
           </div>
 
-          <div className="hidden lg:flex items-center self-end gap-[16px]">
+          <div
+            data-aos="fade-left"
+            className="hidden lg:flex items-center self-end gap-[16px]"
+          >
             <div className="py-[8px] px-[10px] border-2 border-[#E1AB56] rounded-[4px] mr-[8px]">
               <span className="text-[16px] text-[#E1AB56] leading-[24px] font-semibold">
                 {sliderIndex + 1} / {sliderLastIndex}

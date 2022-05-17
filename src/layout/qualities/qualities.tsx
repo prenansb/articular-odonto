@@ -34,10 +34,12 @@ export default function Qualities() {
       id="qualidades"
       className="relative bg-gradient-to-b from-[#EEF2F6] to-[#E7ECF2] pt-[96px] pb-[64px] md:pb-[96px]"
     >
-      <ArrowDownSvg className="box-content py-[13.5px] px-[11.5px] left-[calc(50%-17.5px)] shadow-[0_0_20px_#24423f26] absolute top-[-16px] bg-[#E1AB56] rounded-[999px]" />
+      <div data-aos="fade-in" className="absolute top-[-16px] left-[calc(50%-17.5px)]">
+        <ArrowDownSvg className="box-content py-[13.5px] px-[11.5px] shadow-[0_0_20px_#24423f26] bg-[#E1AB56] rounded-[999px]" />
+      </div>
 
       <div className="flex flex-col items-center lg:flex-row lg:justify-between lg:items-start lg:max-w-[1312px] lg:px-[48px] lg:mx-auto">
-        <div className="flex flex-col items-center lg:items-start">
+        <div data-aos="fade-right" className="flex flex-col items-center lg:items-start">
           <span className="flex items-center gap-[8px] text-[#81540E] text-[14px] leading-[18px] font-semibold mb-[8px] sm:mb-[14px] md:mb-[20px]">
             <CompilingSvg />
             DIFERENCIAIS
@@ -59,13 +61,17 @@ export default function Qualities() {
         </div>
 
         <div>
-          <span className="hidden text-[#233B37] text-[20px] leading-[30px] font-normal max-w-[312px] lg:block lg:mt-[20px]">
+          <span
+            data-aos="fade-left"
+            className="hidden text-[#233B37] text-[20px] leading-[30px] font-normal max-w-[312px] lg:block lg:mt-[20px]"
+          >
             Descubra o que nos diferencia de outras clínicas em Fortaleza
           </span>
           <ul className="flex flex-col gap-[28px] mt-[48px] sm:mt-[70px] md:mt-[76px] lg:mt-[56px]">
             {topics.map(topic => (
               <li
                 key={topic.attribute}
+                data-aos="fade-left"
                 className="flex flex-col gap-[8px] justify-center items-center lg:items-start"
               >
                 <div className="flex flex-col items-center gap-[8px] lg:flex-row lg:gap-[16px] lg:mb-[12px]">

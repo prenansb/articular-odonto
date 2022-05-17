@@ -1,11 +1,23 @@
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
+import { useEffect } from 'react'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import { Footer, Navbar } from '../common'
 import '../styles/global-style.css'
 
 function MyApp({ Component, pageProps }: AppProps) {
+  useEffect(() => {
+    AOS.init({
+      easing: 'ease-out-cubic',
+      duration: 250,
+      once: true,
+      offset: 25,
+    })
+  }, [])
+
   return (
     <>
       <Head>

@@ -5,7 +5,7 @@ interface TestimonialProps {
 
 export default function Testimonial({ patient, review }: TestimonialProps) {
   return (
-    <div className="swiper-slide max-w-[292px] lg:max-w-[353px]">
+    <div data-aos="fade-in" className="swiper-slide max-w-[292px] lg:max-w-[353px]">
       <div className="p-[24px] h-[335px] mb-[32px] flex flex-col items-start justify-between bg-[#DEEDEB] rounded-[8px] md:mb-[48px]">
         <p className="mb-[40px] text-[#667F7B] text-[16px] leading-[24px] font-medium xl:text-[18px] xl:leading-[27px]">
           {review}
