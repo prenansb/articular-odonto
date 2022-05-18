@@ -67,15 +67,15 @@ export default function PopUp() {
   return (
     <div
       ref={popUpRef}
-      className="sm:invisible fixed touch-none will-change-transform bg-[#EAEFF4] transition ease-out shadow-[0_-2px_12px_#0000001e] pb-4 pt-6 rounded-t-2xl bottom-0 z-10 w-full px-6 invisible flex items-center gap-8 justify-center"
+      className="sm:invisible fixed touch-none will-change-transform bg-[#EAEFF4] transition ease-out shadow-[0_-2px_12px_#0000001e] pb-4 pt-6 rounded-t-2xl bottom-0 z-10 w-full px-6 invisible flex items-center gap-8 justify-between"
     >
       <div
         onTouchStart={handlePopUpStart}
         onTouchMove={handlePopUpMove}
         onTouchEnd={handlePopUpEnd}
-        className="absolute top-[-15px] w-full h-[39px]"
+        className="absolute top-[-15px] left-0 w-full h-[39px]"
       />
-      <div className="absolute top-2.5 w-10 h-1 bg-[#D5DDE5] rounded-full" />
+      <div className="absolute top-2.5 left-[calc(50%-20px)] w-10 h-1 bg-[#D5DDE5] rounded-full" />
       <div className="flex flex-col gap-2">
         <h6 className="text-sm text-[#36414C] leading-[18px] font-semibold">Dúvidas?</h6>
         <span className="text-xs text-[#66737F] leading-[18px] font-medium">
