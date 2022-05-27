@@ -25,12 +25,8 @@ export default function Informations() {
           Telefone para contato
         </span>
         <span className="font-medium text-[16px] leading-[24px] text-[#667F7B]">
-          <a href="tel:+55-85-3482-6566" target="_self" rel="noreferrer noopener">
-            (85) 9 9999-9999
-          </a>{' '}
-          ou{' '}
-          <a href="tel:+55-85-3482-6566" target="_self" rel="noreferrer noopener">
-            (85) 9 9999-9999
+          <a href="tel:+55-85-99911-4237" target="_self" rel="noreferrer noopener">
+            (85) 9 9911-4237
           </a>
         </span>
       </div>

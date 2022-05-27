@@ -83,7 +83,7 @@ export default function PopUp() {
         </span>
       </div>
       <a
-        href="#"
+        href="https://wa.me/5585999114237"
         draggable="false"
         className="flex items-center justify-center gap-[16px] px-[23px] py-[16px] bg-[#54B6AE] hover:brightness-95 active:brightness-90 transition text-[14px] text-[#FFFFFF] font-medium leading-[24px] rounded-[4px]"
       >

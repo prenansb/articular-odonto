@@ -25,7 +25,7 @@ export default function LastCall() {
             Agende sua consulta conosco, <br /> temos o maior prazer em te receber.
           </p>
           <a
-            href="#"
+            href="https://wa.me/5585999114237"
             draggable="false"
             className="hover:brightness-95 active:brightness-90 transition text-[14px] text-[#54B6AE] font-medium leading-[24px] flex items-center justify-center gap-[20px] bg-[#F6F6F8] rounded-[4px] py-[12px] px-[24px]"
           >

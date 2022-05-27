@@ -79,12 +79,12 @@ export default function Location() {
             </div>
 
             <a
-              href="tel:+55-85-3482-6566"
+              href="tel:+55-85-99911-4237"
               target="_self"
               rel="noreferrer noopener"
               className="max-w-[300px] text-[16px] text-[#667F7B] leading-[24px] font-medium text-center lg:text-left"
             >
-              (85) 9.999-9999 ou (85) 9.999-9999
+              (85) 9 9911-4237
             </a>
           </li>
         </ul>
