@@ -1,10 +1,10 @@
 import Image from 'next/image'
 import { useEffect } from 'react'
 import Swiper, { Navigation, SwiperOptions } from 'swiper'
-import { Img1, Img2, Img3, Img4, Img5 } from './imgs'
+import { Img1, Img2, Img3, Img4, Img5, Img6 } from './imgs'
 import { CameraSvg } from './svgs'
 
-const images = [Img1, Img2, Img3, Img2, Img1, Img3, Img5, Img4, Img1]
+const images = [Img1, Img2, Img3, Img2, Img1, Img3, Img5, Img4, Img6]
 
 export default function Gallery() {
   useEffect(() => {
