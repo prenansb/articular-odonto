@@ -53,7 +53,7 @@ export default function Navbar() {
           </ul>
 
           <a
-            href="https://wa.me/5585999114237"
+            href="https://wa.me/message/HYWCU5Z3I6X2K1"
             draggable="false"
             onClick={() => setOpen(false)}
             className={`${

@@ -1,7 +1,11 @@
 import { InstagramSvg, WhatsappSvg } from './svgs'
 
 const socials = [
-  { name: 'Whatsapp', icon: <WhatsappSvg />, link: 'https://wa.me/5585999114237' },
+  {
+    name: 'Whatsapp',
+    icon: <WhatsappSvg />,
+    link: 'https://wa.me/message/HYWCU5Z3I6X2K1',
+  },
   {
     name: 'Instagram',
     icon: <InstagramSvg />,

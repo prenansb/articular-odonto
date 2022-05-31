@@ -80,7 +80,7 @@ export default function Card({ informations, isTabActive, isDesktop }: CardProps
           ))}
         </ul>
         <a
-          href="https://wa.me/5585999114237"
+          href="https://wa.me/message/HYWCU5Z3I6X2K1"
           draggable="false"
           className="hover:brightness-95 active:brightness-90 transition flex items-center justify-center gap-[16px] self-center w-full bg-[#54B6AE] rounded-[4px] py-[14px] px-[32px] text-[14px] text-[#FFFFFF] font-medium leading-[21px]"
         >
