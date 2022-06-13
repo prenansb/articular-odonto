@@ -26,12 +26,12 @@ const images = [
   Img5,
   Img6,
   Img7,
-  Img8,
-  Img9,
-  Img10,
   Img11,
   Img12,
   Img13,
+  Img8,
+  Img9,
+  Img10,
 ]
 
 export default function Gallery() {
