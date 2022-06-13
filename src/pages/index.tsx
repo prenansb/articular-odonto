@@ -24,9 +24,9 @@ const Index: NextPage = () => {
         />
         <meta
           name="image"
-          content="https://articular-odonto.vercel.app/imgs/banner-share.png"
+          content="https://articularodonto.com.br/imgs/banner-share.png"
         />
-        <meta property="og:url" content="https://articular-odonto.vercel.app/" />
+        <meta property="og:url" content="https://articularodonto.com.br" />
         <meta
           property="og:title"
           content="Articular Odonto | Sua clínica odontológica popular"
@@ -37,7 +37,7 @@ const Index: NextPage = () => {
         />
         <meta
           property="og:image"
-          content="https://articular-odonto.vercel.app/imgs/banner-share.png"
+          content="https://articularodonto.com.br/imgs/banner-share.png"
         />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
