@@ -1,20 +1,20 @@
-import { useEffect, useState } from 'react'
-import { CloseSvg, LogoSvg, MenuSvg, WhatsappSvg } from './svgs'
+import { useEffect, useState } from "react"
+import { CloseSvg, LogoSvg, MenuSvg, WhatsappSvg } from "./svgs"
 
 const links = [
-  { name: 'Qualidades', path: 'qualidades' },
-  { name: 'Tratamentos', path: 'tratamentos' },
-  { name: 'Sobre nós', path: 'sobre' },
-  { name: 'Depoimentos', path: 'depoimentos' },
-  { name: 'Localização', path: 'local' },
+  { name: "Qualidades", path: "qualidades" },
+  { name: "Tratamentos", path: "tratamentos" },
+  { name: "Sobre nós", path: "sobre" },
+  { name: "Depoimentos", path: "depoimentos" },
+  { name: "Localização", path: "local" },
 ]
 
 function toggleScrollbarVisibility(menuOpen: boolean) {
   if (menuOpen) {
-    document.body.style.overflow = 'hidden'
+    document.body.style.overflow = "hidden"
     return
   }
-  document.body.style.overflow = ''
+  document.body.style.overflow = ""
 }
 
 export default function Navbar() {
@@ -29,13 +29,13 @@ export default function Navbar() {
         <div
           className={`${
             open
-              ? 'flex flex-col fixed inset-0 z-50 h-screen bg-[#F6F7F9] mt-[80px]'
-              : 'hidden lg:flex'
+              ? "flex flex-col fixed inset-0 z-50 h-screen bg-[#F6F7F9] mt-[80px]"
+              : "hidden lg:flex"
           } items-center xl:flex-1`}
         >
           <ul
             className={`${
-              open && 'flex flex-col mt-[48px] mb-[64px]'
+              open && "flex flex-col mt-[48px] mb-[64px]"
             } lg:flex items-center gap-[40px] xl:mx-auto`}
           >
             {links.map(link => (
@@ -53,16 +53,16 @@ export default function Navbar() {
           </ul>
 
           <a
-            href="https://wa.me/message/HYWCU5Z3I6X2K1"
+            href="https://wa.me/5585988000778"
             draggable="false"
             onClick={() => setOpen(false)}
             className={`${
               open
-                ? 'flex active:brightness-90 text-[#FFFFFF] bg-[#54B6AE]'
-                : 'hidden xl:flex hover:bg-[rgba(84,182,172,0.07)] active:bg-[rgba(84,182,172,0.14)] bg-[#F6F6F8] border border-[#54B6AE] text-[#54B6AE]'
+                ? "flex active:brightness-90 text-[#FFFFFF] bg-[#54B6AE]"
+                : "hidden xl:flex hover:bg-[rgba(84,182,172,0.07)] active:bg-[rgba(84,182,172,0.14)] bg-[#F6F6F8] border border-[#54B6AE] text-[#54B6AE]"
             } transition items-center justify-center gap-[20px] rounded-[4px] py-[12px] px-[24px] text-[14px] font-medium leading-[24px]`}
           >
-            <WhatsappSvg className={open ? 'fill-white' : 'fill-[#54B6AE]'} />
+            <WhatsappSvg className={open ? "fill-white" : "fill-[#54B6AE]"} />
             Agende sua consulta
           </a>
         </div>
@@ -70,7 +70,7 @@ export default function Navbar() {
         <button
           onClick={() => setOpen(true)}
           className={`${
-            open ? 'hidden' : 'block'
+            open ? "hidden" : "block"
           } w-[40px] h-[40px] leading-[0px] lg:hidden`}
         >
           <MenuSvg className="inline" />
@@ -78,7 +78,7 @@ export default function Navbar() {
         <button
           onClick={() => setOpen(false)}
           className={`${
-            open ? 'block' : 'hidden'
+            open ? "block" : "hidden"
           } w-[40px] h-[40px] leading-[0px] lg:hidden`}
         >
           <CloseSvg className="inline" />

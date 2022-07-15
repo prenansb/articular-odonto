@@ -24,9 +24,21 @@ export default function Informations() {
         <span className="font-medium text-xl leading-7 text-[#36414C]">
           Telefone para contato
         </span>
-        <span className="font-medium text-[16px] leading-[24px] text-[#667F7B]">
-          <a href="tel:+55-85-99911-4237" target="_self" rel="noreferrer noopener">
-            (85) 9 9911-4237
+        <span className="flex items-center gap-2 font-medium text-[16px] leading-[24px] text-[#667F7B]">
+          <a
+            href="tel:+55-85-3283-4784"
+            target="_self"
+            rel="noreferrer noopener"
+          >
+            (85) 3283-4784
+          </a>
+          ou
+          <a
+            href="tel:+55-85-98800-0778"
+            target="_self"
+            rel="noreferrer noopener"
+          >
+            (85) 9 8800-0778
           </a>
         </span>
       </div>

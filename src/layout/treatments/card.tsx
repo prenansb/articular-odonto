@@ -1,5 +1,5 @@
-import { useCallback, useEffect, useRef } from 'react'
-import { CheckSvg, WaitingSvg, WhatsappSvg } from './svgs'
+import { useCallback, useEffect, useRef } from "react"
+import { CheckSvg, WaitingSvg, WhatsappSvg } from "./svgs"
 
 type CardProps = {
   isTabActive: boolean
@@ -12,7 +12,11 @@ type CardProps = {
   }
 }
 
-export default function Card({ informations, isTabActive, isDesktop }: CardProps) {
+export default function Card({
+  informations,
+  isTabActive,
+  isDesktop,
+}: CardProps) {
   const wrapperRef = useRef<HTMLDivElement>(null)
   const itemRef = useRef<HTMLDivElement>(null)
 
@@ -20,28 +24,30 @@ export default function Card({ informations, isTabActive, isDesktop }: CardProps
     if (!wrapperRef.current || !itemRef.current) return
 
     if (isTabActive) {
-      wrapperRef.current.style.maxHeight = `${itemRef.current.scrollHeight + 40}px`
+      wrapperRef.current.style.maxHeight = `${
+        itemRef.current.scrollHeight + 40
+      }px`
       return
     }
 
-    wrapperRef.current.style.maxHeight = '0px'
+    wrapperRef.current.style.maxHeight = "0px"
   }, [isTabActive])
 
   useEffect(() => {
     setCardHeight()
-    window.addEventListener('resize', setCardHeight)
+    window.addEventListener("resize", setCardHeight)
 
     return () => {
-      window.removeEventListener('resize', setCardHeight)
+      window.removeEventListener("resize", setCardHeight)
     }
   }, [isTabActive, setCardHeight])
 
   return (
     <div
-      data-aos={isDesktop ? 'fade-left' : 'none'}
+      data-aos={isDesktop ? "fade-left" : "none"}
       ref={wrapperRef}
-      className={`${isTabActive ? 'block' : 'hidden'} ${
-        isDesktop ? 'hidden lg:block' : 'lg:hidden'
+      className={`${isTabActive ? "block" : "hidden"} ${
+        isDesktop ? "hidden lg:block" : "lg:hidden"
       } max-h-0 overflow-y-hidden transition-[max-height] duration-300`}
     >
       <div
@@ -70,7 +76,7 @@ export default function Card({ informations, isTabActive, isDesktop }: CardProps
                 </>
               ) : (
                 <>
-                  <WaitingSvg />{' '}
+                  <WaitingSvg />{" "}
                   <span className="text-[#66737f7f] text-[18px] leading-[21px] font-semibold">
                     Em breve mais tratamentos
                   </span>
@@ -80,7 +86,7 @@ export default function Card({ informations, isTabActive, isDesktop }: CardProps
           ))}
         </ul>
         <a
-          href="https://wa.me/message/HYWCU5Z3I6X2K1"
+          href="https://wa.me/5585988000778"
           draggable="false"
           className="hover:brightness-95 active:brightness-90 transition flex items-center justify-center gap-[16px] self-center w-full bg-[#54B6AE] rounded-[4px] py-[14px] px-[32px] text-[14px] text-[#FFFFFF] font-medium leading-[21px]"
         >

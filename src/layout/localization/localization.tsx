@@ -1,8 +1,11 @@
-import { ClockSvg, MarkerSvg, PhoneSvg, SecondaryMarkerSvg } from './svgs'
+import { ClockSvg, MarkerSvg, PhoneSvg, SecondaryMarkerSvg } from "./svgs"
 
 export default function Location() {
   return (
-    <section id="local" className="py-[80px] lg:max-w-[1312px] lg:px-[48px] lg:mx-auto">
+    <section
+      id="local"
+      className="py-[80px] lg:max-w-[1312px] lg:px-[48px] lg:mx-auto"
+    >
       <div className="flex flex-col items-center gap-[16px] mb-[40px] md:mb-[64px] lg:items-end lg:justify-between lg:flex-row">
         <div data-aos="fade-right">
           <span className="flex items-center justify-center lg:justify-start gap-[8px] text-[14px] text-[#81540E] leading-[18px] font-semibold mb-[16px]">
@@ -78,14 +81,23 @@ export default function Location() {
               </h5>
             </div>
 
-            <a
-              href="tel:+55-85-99911-4237"
-              target="_self"
-              rel="noreferrer noopener"
-              className="max-w-[300px] text-[16px] text-[#667F7B] leading-[24px] font-medium text-center lg:text-left"
-            >
-              (85) 9 9911-4237
-            </a>
+            <div className="flex items-center gap-2 max-w-[300px] text-[16px] text-[#667F7B] leading-[24px] font-medium text-center lg:text-left">
+              <a
+                href="tel:+55-85-3283-4784"
+                target="_self"
+                rel="noreferrer noopener"
+              >
+                (85) 3283-4784
+              </a>
+              ou
+              <a
+                href="tel:+55-85-98800-0778"
+                target="_self"
+                rel="noreferrer noopener"
+              >
+                (85) 9 8800-0778
+              </a>
+            </div>
           </li>
         </ul>
       </div>

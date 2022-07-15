@@ -1,5 +1,5 @@
-import { TouchEvent, useEffect, useRef } from 'react'
-import { WhatsappSvg } from './svgs'
+import { TouchEvent, useEffect, useRef } from "react"
+import { WhatsappSvg } from "./svgs"
 
 export default function PopUp() {
   const popUpRef = useRef<HTMLDivElement>(null)
@@ -13,15 +13,15 @@ export default function PopUp() {
     const heightInPixelsToShowPopUp = 460
 
     window.scrollY >= heightInPixelsToShowPopUp
-      ? ref.classList.add('showPopUp')
-      : ref.classList.remove('showPopUp')
+      ? ref.classList.add("showPopUp")
+      : ref.classList.remove("showPopUp")
   }
 
   useEffect(() => {
-    window.addEventListener('scroll', showPopUpOnScroll)
+    window.addEventListener("scroll", showPopUpOnScroll)
 
     return () => {
-      window.removeEventListener('scroll', showPopUpOnScroll)
+      window.removeEventListener("scroll", showPopUpOnScroll)
     }
   }, [])
 
@@ -34,7 +34,7 @@ export default function PopUp() {
   function handlePopUpStart(event: TouchEvent) {
     translateRef.current.start = getHeightDislocation(event)
     if (!popUpRef.current) return
-    popUpRef.current.style.transitionDuration = '0ms'
+    popUpRef.current.style.transitionDuration = "0ms"
   }
 
   function handlePopUpMove(event: TouchEvent) {
@@ -61,7 +61,7 @@ export default function PopUp() {
 
     translateRef.current.end = translate
     popUpRef.current.style.transform = `translateY(${translateRef.current.end}px)`
-    popUpRef.current.style.transitionDuration = '200ms'
+    popUpRef.current.style.transitionDuration = "200ms"
   }
 
   return (
@@ -77,13 +77,15 @@ export default function PopUp() {
       />
       <div className="absolute top-2.5 left-[calc(50%-20px)] w-10 h-1 bg-[#D5DDE5] rounded-full" />
       <div className="flex flex-col gap-2">
-        <h6 className="text-sm text-[#36414C] leading-[18px] font-semibold">Dúvidas?</h6>
+        <h6 className="text-sm text-[#36414C] leading-[18px] font-semibold">
+          Dúvidas?
+        </h6>
         <span className="text-xs text-[#66737F] leading-[18px] font-medium">
           Fale conosco
         </span>
       </div>
       <a
-        href="https://wa.me/message/HYWCU5Z3I6X2K1"
+        href="https://wa.me/5585988000778"
         draggable="false"
         className="flex items-center justify-center gap-[16px] px-[23px] py-[16px] bg-[#54B6AE] hover:brightness-95 active:brightness-90 transition text-[14px] text-[#FFFFFF] font-medium leading-[24px] rounded-[4px]"
       >
